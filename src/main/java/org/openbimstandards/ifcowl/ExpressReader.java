@@ -413,7 +413,7 @@ public class ExpressReader {
 	}
 
 	private void outputEntitiesAndTypes(String filePathNoExt, String schemaName) {
-		String filePath = filePathNoExt.substring(0, "\\".lastIndexOf(filePathNoExt));
+		String filePath = filePathNoExt.substring(0, filePathNoExt.lastIndexOf("\\"));
 		System.out.println("writing output to : " + filePath+"ent"+schemaName+".ser and " + filePath+"typ"+schemaName+".ser");
 
 		FileOutputStream fos;
@@ -435,7 +435,7 @@ public class ExpressReader {
 	}	
 
 	private void outputEntityPropertyList(String filePathNoExt, String schemaName){
-		String filePath = filePathNoExt.substring(0, "\\".lastIndexOf(filePathNoExt));
+		String filePath = filePathNoExt.substring(0, filePathNoExt.lastIndexOf("\\"));
 		System.out.println("writing output to : " + filePath+"proplist"+schemaName+".csv and " + filePath+"proplist"+schemaName+".csv");
 		try {
 			File file = new File(filePath+"\\"+"proplist"+schemaName+".csv");
