@@ -14,12 +14,12 @@ import java.util.Map;
 import java.util.Set;
 import java.util.Map.Entry;
 
-import org.buildingsmart.vo.AttributeVO;
-import org.buildingsmart.vo.EntityVO;
-import org.buildingsmart.vo.NamedIndividualVO;
-import org.buildingsmart.vo.PrimaryTypeVO;
-import org.buildingsmart.vo.PropertyVO;
-import org.buildingsmart.vo.TypeVO;
+import org.openbimstandards.vo.AttributeVO;
+import org.openbimstandards.vo.EntityVO;
+import org.openbimstandards.vo.NamedIndividualVO;
+import org.openbimstandards.vo.PrimaryTypeVO;
+import org.openbimstandards.vo.PropertyVO;
+import org.openbimstandards.vo.TypeVO;
 
 import fi.ni.rdf.Namespace;
 

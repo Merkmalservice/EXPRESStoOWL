@@ -3,7 +3,6 @@ package org.openbimstandards.ifcowl;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileWriter;
@@ -11,9 +10,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.ObjectOutputStream;
-import java.io.OutputStreamWriter;
-import java.io.UnsupportedEncodingException;
-import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -24,16 +20,13 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.StringTokenizer;
 
-import org.apache.jena.ontology.OntModel;
-import org.apache.jena.ontology.OntModelSpec;
-import org.apache.jena.rdf.model.ModelFactory;
-import org.buildingsmart.vo.AttributeVO;
-import org.buildingsmart.vo.EntityVO;
-import org.buildingsmart.vo.InverseVO;
-import org.buildingsmart.vo.NamedIndividualVO;
-import org.buildingsmart.vo.PrimaryTypeVO;
-import org.buildingsmart.vo.PropertyVO;
-import org.buildingsmart.vo.TypeVO;
+import org.openbimstandards.vo.AttributeVO;
+import org.openbimstandards.vo.EntityVO;
+import org.openbimstandards.vo.InverseVO;
+import org.openbimstandards.vo.NamedIndividualVO;
+import org.openbimstandards.vo.PrimaryTypeVO;
+import org.openbimstandards.vo.PropertyVO;
+import org.openbimstandards.vo.TypeVO;
 
 import fi.ni.rdf.Namespace;
 
@@ -179,49 +172,12 @@ public class ExpressReader {
 					ow.outputOWL(args[1]);
 					System.out
 					.println("Ended converting the EXPRESS schema into corresponding OWL file");
-
-					// modify location when using
-					er.CleanModelAndRewrite(args[1]);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
 			} else
 				System.out
 				.println("Usage: java ExpressReader expressSchemaname pathToOutputFile \nExample: java ExpressReader IFC2X3_TC1 C:/outputfile.owl \nNote: only 'IFC2X3_Final', 'IFC2X3_TC1', 'IFC4_ADD1' and 'IFC4' are accepted options");
-		}
-	}
-
-	public void CleanModelAndRewrite(String filePathNoExt){
-		try {
-			OntModel om = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM);
-			BufferedReader instr = new BufferedReader(new InputStreamReader(new FileInputStream(filePathNoExt + ".ttl"), "UTF-8"));
-			om.read(instr, null, "TTL");
-
-			System.out
-			.println("generated RDF graph is OK! Writing TTL and RDF file...");
-			try {
-				OutputStreamWriter char_output = new OutputStreamWriter(
-						new FileOutputStream(filePathNoExt + ".ttl"), Charset.forName("UTF-8")
-						.newEncoder());
-				BufferedWriter out = new BufferedWriter(char_output);
-				om.write(out, "TTL");
-
-				char_output = new OutputStreamWriter(
-						new FileOutputStream(filePathNoExt + ".rdf"), Charset.forName(
-								"UTF-8").newEncoder());
-				out = new BufferedWriter(char_output);
-				om.write(out, "RDF/XML");
-				System.out.println("OK!");
-			} catch (IOException e) {
-				System.err
-				.println("Something went wrong while writing the RDF file");
-				System.exit(1);
-				e.printStackTrace();
-			}
-		} catch (UnsupportedEncodingException e1) {
-			e1.printStackTrace();
-		} catch (FileNotFoundException e1) {
-			e1.printStackTrace();
 		}
 	}
 
