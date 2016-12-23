@@ -152,7 +152,7 @@ public class ExpressReader {
 					|| in.equalsIgnoreCase("IFC2X3_TC1")
 					|| in.equalsIgnoreCase("IFC4_ADD1")
 					|| in.equalsIgnoreCase("IFC4_ADD2")
-					|| in.equalsIgnoreCase("IFC4x1")
+					|| in.equalsIgnoreCase("IFC4x1_RC3")
 					|| in.equalsIgnoreCase("IFC4")) {
 				try {
 					InputStream instr = ExpressReader.class
@@ -161,7 +161,6 @@ public class ExpressReader {
 					Namespace.IFC = "http://ifcowl.openbimstandards.org/"
 							+ in;
 					er.readAndBuild();
-
 
 					er.outputEntitiesAndTypes(args[1], in);
 					er.outputEntityPropertyList(args[1], in);
