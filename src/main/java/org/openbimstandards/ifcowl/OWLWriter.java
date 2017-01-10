@@ -1087,7 +1087,7 @@ public class OWLWriter {
                         + "\tdce:contributor \"Maria Poveda Villalon (mpoveda@fi.upm.es)\" ;\r\n" + "\tdce:contributor \"Jakob Beetz (j.beetz@tue.nl)\" ;\r\n" + "\tdce:title \"" + expressSchemaName
                         + "\" ;\r\n" + "\tdce:description \"OWL ontology for the IFC conceptual data schema and exchange file format for Building Information Model (BIM) data\" ;\r\n"
                         + "\tdce:identifier \"" + expressSchemaName + "\" ;\r\n" + "\tdce:language \"en\" ; \r\n" + "\tvann:preferredNamespacePrefix \"ifc\" ; \r\n"
-                        + "\tvann:preferredNamespaceUri \"" + Namespace.IFC + "\" ; \r\n" + "\towl:imports <http://purl.org/voc/express> ; \r\n"
+                        + "\tvann:preferredNamespaceUri \"" + Namespace.IFC + "\" ; \r\n" + "\towl:imports <https://w3id.org/express> ; \r\n"
                         + "\tcc:license <http://creativecommons.org/licenses/by/3.0/> . \r\n\r\n";
 
         s += "dce:creator \r\n\trdf:type owl:AnnotationProperty .\r\n\r\n";
