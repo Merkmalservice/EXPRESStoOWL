@@ -1,4 +1,4 @@
-package org.openbimstandards.ifcowl;
+package com.buildingsmart.tech.ifcowl;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -20,13 +20,13 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.StringTokenizer;
 
-import org.openbimstandards.vo.AttributeVO;
-import org.openbimstandards.vo.EntityVO;
-import org.openbimstandards.vo.InverseVO;
-import org.openbimstandards.vo.NamedIndividualVO;
-import org.openbimstandards.vo.PrimaryTypeVO;
-import org.openbimstandards.vo.PropertyVO;
-import org.openbimstandards.vo.TypeVO;
+import com.buildingsmart.tech.ifcowl.vo.AttributeVO;
+import com.buildingsmart.tech.ifcowl.vo.EntityVO;
+import com.buildingsmart.tech.ifcowl.vo.InverseVO;
+import com.buildingsmart.tech.ifcowl.vo.NamedIndividualVO;
+import com.buildingsmart.tech.ifcowl.vo.PrimaryTypeVO;
+import com.buildingsmart.tech.ifcowl.vo.PropertyVO;
+import com.buildingsmart.tech.ifcowl.vo.TypeVO;
 
 import fi.ni.rdf.Namespace;
 
@@ -158,7 +158,7 @@ public class ExpressReader {
 					InputStream instr = ExpressReader.class
 							.getResourceAsStream("/" + in + ".exp");
 					ExpressReader er = new ExpressReader(instr);
-					Namespace.IFC = "http://ifcowl.openbimstandards.org/"
+					Namespace.IFC = "http://www.buildingsmart-tech.org/ifcOWL/"
 							+ in;
 					er.readAndBuild();
 

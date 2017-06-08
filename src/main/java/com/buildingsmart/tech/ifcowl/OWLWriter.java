@@ -1,4 +1,4 @@
-package org.openbimstandards.ifcowl;
+package com.buildingsmart.tech.ifcowl;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -14,12 +14,12 @@ import java.util.Map;
 import java.util.Set;
 import java.util.Map.Entry;
 
-import org.openbimstandards.vo.AttributeVO;
-import org.openbimstandards.vo.EntityVO;
-import org.openbimstandards.vo.NamedIndividualVO;
-import org.openbimstandards.vo.PrimaryTypeVO;
-import org.openbimstandards.vo.PropertyVO;
-import org.openbimstandards.vo.TypeVO;
+import com.buildingsmart.tech.ifcowl.vo.AttributeVO;
+import com.buildingsmart.tech.ifcowl.vo.EntityVO;
+import com.buildingsmart.tech.ifcowl.vo.NamedIndividualVO;
+import com.buildingsmart.tech.ifcowl.vo.PrimaryTypeVO;
+import com.buildingsmart.tech.ifcowl.vo.PropertyVO;
+import com.buildingsmart.tech.ifcowl.vo.TypeVO;
 
 import fi.ni.rdf.Namespace;
 
