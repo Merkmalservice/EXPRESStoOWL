@@ -27,4 +27,5 @@ public class Namespace {
     public static final String CC = "http://creativecommons.org/ns#";
     public static final String LIST = "https://w3id.org/list#";
     public static final String EXPRESS = "https://w3id.org/express#";
+    public static final String SIMPLEBIM = "http://ifcowl.openbimstandards.org/SimpleBIM";
 }
