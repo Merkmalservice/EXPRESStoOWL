@@ -1,4 +1,7 @@
-IfcParserLib Change Log
+EXPRESStoOWL Change Log
+
+Release 0.2 (2018-01-04)
+- Added additional ontology files
 
 Release 0.1 (2017-06-02)
 - Changed namespace to com.buildingsmart.tech.ifcowl
