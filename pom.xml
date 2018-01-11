@@ -27,7 +27,7 @@
 
   <scm>
     <url>https://github.com/pipauwel/EXPRESStoOWL</url>
-    <connection>scm:git:git@github.com/pipauwel/EXPRESStoOWL.git</connection>
+    <connection>scm:git:git@github.com:pipauwel/EXPRESStoOWL.git</connection>
     <developerConnection>scm:git:git@github.com:pipauwel/EXPRESStoOWL.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
