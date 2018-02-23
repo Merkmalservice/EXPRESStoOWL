@@ -1,5 +1,8 @@
 EXPRESStoOWL Change Log
 
+Current Development 0.3-SNAPSHOT
+- 
+
 Release 0.2 (2018-01-04)
 - Added additional ontology files
 
