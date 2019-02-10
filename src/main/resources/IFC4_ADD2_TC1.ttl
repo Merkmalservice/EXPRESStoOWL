@@ -1,6 +1,6 @@
-@base <http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL> .
-@prefix : <http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#> .
-@prefix ifc: <http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#> .
+@base <http://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL> .
+@prefix : <http://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#> .
+@prefix ifc: <http://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,21 +11,21 @@
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-<http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL>
+<http://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL>
 	rdf:type owl:Ontology ;
-	rdfs:comment "Ontology automatically generated from the EXPRESS schema 'IFC4x1_FINAL' using the 'IFC-to-RDF' converter developed by Pieter Pauwels (pipauwel.pauwels@ugent.be), based on the earlier versions from Jyrki Oraskari (jyrki.oraskari@aalto.fi) and Davy Van Deursen (davy.vandeursen@ugent.be)" ;
+	rdfs:comment "Ontology automatically generated from the EXPRESS schema 'IFC4_ADD2_TC1' using the 'IFC-to-RDF' converter developed by Pieter Pauwels (pipauwel.pauwels@ugent.be), based on the earlier versions from Jyrki Oraskari (jyrki.oraskari@aalto.fi) and Davy Van Deursen (davy.vandeursen@ugent.be)" ;
 	dce:creator "Pieter Pauwels (pipauwel.pauwels@ugent.be)" ;
 	dce:creator "Walter Terkaj  (walter.terkaj@itia.cnr.it)" ;
-	dce:date "2017/10/23" ;
+	dce:date "2019/02/09" ;
 	dce:contributor "Aleksandra Sojic (aleksandra.sojic@itia.cnr.it)" ;
 	dce:contributor "Maria Poveda Villalon (mpoveda@fi.upm.es)" ;
 	dce:contributor "Jakob Beetz (j.beetz@tue.nl)" ;
-	dce:title "IFC4x1_FINAL" ;
+	dce:title "IFC4_ADD2_TC1" ;
 	dce:description "OWL ontology for the IFC conceptual data schema and exchange file format for Building Information Model (BIM) data" ;
-	dce:identifier "IFC4x1_FINAL" ;
+	dce:identifier "IFC4_ADD2_TC1" ;
 	dce:language "en" ; 
 	vann:preferredNamespacePrefix "ifc" ; 
-	vann:preferredNamespaceUri "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL" ; 
+	vann:preferredNamespaceUri "http://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL" ; 
 	owl:imports <https://w3id.org/express> ; 
 	cc:license <http://creativecommons.org/licenses/by/3.0/> . 
 
@@ -894,16 +894,6 @@ ifc:CONTSAMEGRADIENTSAMECURVATURE
 	rdf:type owl:NamedIndividual ;
 	rdf:type ifc:IfcTransitionCode ;
 	rdfs:label "CONTSAMEGRADIENTSAMECURVATURE" .
-
-ifc:USERDEFINED
-	rdf:type owl:NamedIndividual ;
-	rdf:type ifc:IfcAlignmentTypeEnum ;
-	rdfs:label "USERDEFINED" .
-
-ifc:NOTDEFINED
-	rdf:type owl:NamedIndividual ;
-	rdf:type ifc:IfcAlignmentTypeEnum ;
-	rdfs:label "NOTDEFINED" .
 
 ifc:SIDEHUNGRIGHTHAND
 	rdf:type owl:NamedIndividual ;
@@ -2653,31 +2643,6 @@ ifc:USERDEFINED
 ifc:NOTDEFINED
 	rdf:type owl:NamedIndividual ;
 	rdf:type ifc:IfcCooledBeamTypeEnum ;
-	rdfs:label "NOTDEFINED" .
-
-ifc:KILOPOINT
-	rdf:type owl:NamedIndividual ;
-	rdf:type ifc:IfcReferentTypeEnum ;
-	rdfs:label "KILOPOINT" .
-
-ifc:MILEPOINT
-	rdf:type owl:NamedIndividual ;
-	rdf:type ifc:IfcReferentTypeEnum ;
-	rdfs:label "MILEPOINT" .
-
-ifc:STATION
-	rdf:type owl:NamedIndividual ;
-	rdf:type ifc:IfcReferentTypeEnum ;
-	rdfs:label "STATION" .
-
-ifc:USERDEFINED
-	rdf:type owl:NamedIndividual ;
-	rdf:type ifc:IfcReferentTypeEnum ;
-	rdfs:label "USERDEFINED" .
-
-ifc:NOTDEFINED
-	rdf:type owl:NamedIndividual ;
-	rdf:type ifc:IfcReferentTypeEnum ;
 	rdfs:label "NOTDEFINED" .
 
 ifc:DEMOLISHING
@@ -8040,36 +8005,6 @@ ifc:NOTDEFINED
 	rdf:type ifc:IfcStairTypeEnum ;
 	rdfs:label "NOTDEFINED" .
 
-ifc:BIQUADRATICPARABOLA
-	rdf:type owl:NamedIndividual ;
-	rdf:type ifc:IfcTransitionCurveType ;
-	rdfs:label "BIQUADRATICPARABOLA" .
-
-ifc:BLOSSCURVE
-	rdf:type owl:NamedIndividual ;
-	rdf:type ifc:IfcTransitionCurveType ;
-	rdfs:label "BLOSSCURVE" .
-
-ifc:CLOTHOIDCURVE
-	rdf:type owl:NamedIndividual ;
-	rdf:type ifc:IfcTransitionCurveType ;
-	rdfs:label "CLOTHOIDCURVE" .
-
-ifc:COSINECURVE
-	rdf:type owl:NamedIndividual ;
-	rdf:type ifc:IfcTransitionCurveType ;
-	rdfs:label "COSINECURVE" .
-
-ifc:CUBICPARABOLA
-	rdf:type owl:NamedIndividual ;
-	rdf:type ifc:IfcTransitionCurveType ;
-	rdfs:label "CUBICPARABOLA" .
-
-ifc:SINECURVE
-	rdf:type owl:NamedIndividual ;
-	rdf:type ifc:IfcTransitionCurveType ;
-	rdfs:label "SINECURVE" .
-
 ifc:AMPERE
 	rdf:type owl:NamedIndividual ;
 	rdf:type ifc:IfcSIUnitName ;
@@ -8402,10 +8337,6 @@ ifc:IfcDynamicViscosityMeasure
 	rdfs:subClassOf expr:REAL .
 
 ifc:IfcTransitionCode
-	rdf:type owl:Class ;
-	rdfs:subClassOf expr:ENUMERATION .
-
-ifc:IfcAlignmentTypeEnum
 	rdf:type owl:Class ;
 	rdfs:subClassOf expr:ENUMERATION .
 
@@ -8747,10 +8678,6 @@ ifc:IfcCooledBeamTypeEnum
 	rdf:type owl:Class ;
 	rdfs:subClassOf expr:ENUMERATION .
 
-ifc:IfcReferentTypeEnum
-	rdf:type owl:Class ;
-	rdfs:subClassOf expr:ENUMERATION .
-
 ifc:IfcTextTransformation
 	rdf:type owl:Class ;
 	rdfs:subClassOf expr:STRING .
@@ -9059,10 +8986,6 @@ ifc:IfcActorSelect
 ifc:IfcDoorTypeEnum
 	rdf:type owl:Class ;
 	rdfs:subClassOf expr:ENUMERATION .
-
-ifc:IfcStrippedOptional
-	rdf:type owl:Class ;
-	rdfs:subClassOf expr:BOOLEAN .
 
 ifc:IfcCurtainWallTypeEnum
 	rdf:type owl:Class ;
@@ -10113,10 +10036,6 @@ ifc:IfcStairTypeEnum
 	rdf:type owl:Class ;
 	rdfs:subClassOf expr:ENUMERATION .
 
-ifc:IfcTransitionCurveType
-	rdf:type owl:Class ;
-	rdfs:subClassOf expr:ENUMERATION .
-
 ifc:IfcAreaMeasure
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcMeasureValue ;
@@ -10244,7 +10163,7 @@ ifc:IfcSweptAreaSolid
 					ifc:IfcSurfaceCurveSweptAreaSolid
 				)
 		] ;
-	owl:disjointWith  ifc:IfcManifoldSolidBrep, ifc:IfcSweptDiskSolid, ifc:IfcSectionedSolid, ifc:IfcCsgSolid ;
+	owl:disjointWith  ifc:IfcManifoldSolidBrep, ifc:IfcSweptDiskSolid, ifc:IfcCsgSolid ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -10580,7 +10499,7 @@ ifc:IfcReparametrisedCompositeCurveSegment
 ifc:IfcSectionedSpine
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcGeometricRepresentationItem ;
-	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcOrientationExpression, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcAlignment2DVertical, ifc:IfcSolidModel, ifc:IfcAlignment2DSegment, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcAlignment2DHorizontal, ifc:IfcGeometricSet, ifc:IfcDistanceExpression ;
+	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcSolidModel, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcGeometricSet ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -11579,61 +11498,6 @@ ifc:IfcResourceTime
 			owl:onClass ifc:IfcPositiveRatioMeasure
 		] .
 
-ifc:IfcAlignment2DHorizontal
-	rdf:type owl:Class ;
-	rdfs:subClassOf ifc:IfcGeometricRepresentationItem ;
-	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcOrientationExpression, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcAlignment2DVertical, ifc:IfcSolidModel, ifc:IfcAlignment2DSegment, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcGeometricSet, ifc:IfcDistanceExpression ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcLengthMeasure ; 
-			owl:onProperty ifc:startDistAlong_IfcAlignment2DHorizontal
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:startDistAlong_IfcAlignment2DHorizontal ;
-			owl:onClass ifc:IfcLengthMeasure
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcAlignment2DHorizontalSegment_List ; 
-			owl:onProperty ifc:segments_IfcAlignment2DHorizontal
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:onProperty ifc:segments_IfcAlignment2DHorizontal ;
-			owl:allValuesFrom
-				[
-					rdf:type owl:Restriction ; 
-					owl:onProperty list:hasNext ; 
-					owl:someValuesFrom ifc:IfcAlignment2DHorizontalSegment_List
-				]
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:segments_IfcAlignment2DHorizontal ;
-			owl:onClass ifc:IfcAlignment2DHorizontalSegment_List
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcAlignmentCurve ; 
-			owl:onProperty ifc:toAlignmentCurve_IfcAlignment2DHorizontal
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ;
-			owl:onProperty ifc:toAlignmentCurve_IfcAlignment2DHorizontal ;
-			owl:onClass ifc:IfcAlignmentCurve ;
-			owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
-		] .
-
 ifc:IfcRoof
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcBuildingElement ;
@@ -11888,7 +11752,7 @@ ifc:IfcActorRole
 ifc:IfcCsgSolid
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcSolidModel ;
-	owl:disjointWith  ifc:IfcSweptAreaSolid, ifc:IfcManifoldSolidBrep, ifc:IfcSweptDiskSolid, ifc:IfcSectionedSolid ;
+	owl:disjointWith  ifc:IfcSweptAreaSolid, ifc:IfcManifoldSolidBrep, ifc:IfcSweptDiskSolid ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -12252,9 +12116,9 @@ ifc:IfcProduct
 					ifc:IfcSpatialElement
 					ifc:IfcElement
 					ifc:IfcStructuralItem
+					ifc:IfcGrid
 					ifc:IfcProxy
 					ifc:IfcPort
-					ifc:IfcPositioningElement
 				)
 		] ;
 	owl:disjointWith  ifc:IfcResource, ifc:IfcGroup, ifc:IfcProcess, ifc:IfcActor, ifc:IfcControl ;
@@ -12314,7 +12178,7 @@ ifc:IfcPort
 					ifc:IfcDistributionPort
 				)
 		] ;
-	owl:disjointWith  ifc:IfcStructuralActivity, ifc:IfcAnnotation, ifc:IfcSpatialElement, ifc:IfcElement, ifc:IfcStructuralItem, ifc:IfcProxy, ifc:IfcPositioningElement ;
+	owl:disjointWith  ifc:IfcStructuralActivity, ifc:IfcAnnotation, ifc:IfcSpatialElement, ifc:IfcElement, ifc:IfcStructuralItem, ifc:IfcGrid, ifc:IfcProxy ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -13474,11 +13338,10 @@ ifc:IfcSolidModel
 					ifc:IfcSweptAreaSolid
 					ifc:IfcManifoldSolidBrep
 					ifc:IfcSweptDiskSolid
-					ifc:IfcSectionedSolid
 					ifc:IfcCsgSolid
 				)
 		] ;
-	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcOrientationExpression, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcAlignment2DVertical, ifc:IfcAlignment2DSegment, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcAlignment2DHorizontal, ifc:IfcGeometricSet, ifc:IfcDistanceExpression .
+	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcGeometricSet .
 
 ifc:IfcTubeBundleType
 	rdf:type owl:Class ;
@@ -13607,60 +13470,6 @@ ifc:IfcStair
 			owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
 			owl:onProperty ifc:predefinedType_IfcStair ;
 			owl:onClass ifc:IfcStairTypeEnum
-		] .
-
-ifc:IfcCurveSegment2D
-	rdf:type owl:Class ;
-	rdfs:subClassOf ifc:IfcBoundedCurve ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Class ;
-			owl:unionOf
-				(
-					ifc:IfcCircularArcSegment2D
-					ifc:IfcLineSegment2D
-					ifc:IfcTransitionCurveSegment2D
-				)
-		] ;
-	owl:disjointWith  ifc:IfcCompositeCurve, ifc:IfcBSplineCurve, ifc:IfcIndexedPolyCurve, ifc:IfcTrimmedCurve, ifc:IfcAlignmentCurve, ifc:IfcPolyline ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcCartesianPoint ; 
-			owl:onProperty ifc:startPoint_IfcCurveSegment2D
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:startPoint_IfcCurveSegment2D ;
-			owl:onClass ifc:IfcCartesianPoint
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcPlaneAngleMeasure ; 
-			owl:onProperty ifc:startDirection_IfcCurveSegment2D
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:startDirection_IfcCurveSegment2D ;
-			owl:onClass ifc:IfcPlaneAngleMeasure
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcPositiveLengthMeasure ; 
-			owl:onProperty ifc:segmentLength_IfcCurveSegment2D
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:segmentLength_IfcCurveSegment2D ;
-			owl:onClass ifc:IfcPositiveLengthMeasure
 		] .
 
 ifc:IfcFailureConnectionCondition
@@ -13804,21 +13613,16 @@ ifc:IfcGeometricRepresentationItem
 					ifc:IfcFillAreaStyleHatching
 					ifc:IfcBooleanResult
 					ifc:IfcFillAreaStyleTiles
-					ifc:IfcOrientationExpression
 					ifc:IfcCompositeCurveSegment
 					ifc:IfcPoint
 					ifc:IfcDirection
 					ifc:IfcLightSource
 					ifc:IfcVector
-					ifc:IfcAlignment2DVertical
 					ifc:IfcSolidModel
-					ifc:IfcAlignment2DSegment
 					ifc:IfcCartesianTransformationOperator
 					ifc:IfcBoundingBox
 					ifc:IfcPlanarExtent
-					ifc:IfcAlignment2DHorizontal
 					ifc:IfcGeometricSet
-					ifc:IfcDistanceExpression
 				)
 		] ;
 	owl:disjointWith  ifc:IfcTopologicalRepresentationItem, ifc:IfcStyledItem, ifc:IfcMappedItem .
@@ -13992,8 +13796,21 @@ ifc:IfcBlock
 
 ifc:IfcOffsetCurve2D
 	rdf:type owl:Class ;
-	rdfs:subClassOf ifc:IfcOffsetCurve ;
-	owl:disjointWith  ifc:IfcOffsetCurveByDistances, ifc:IfcOffsetCurve3D ;
+	rdfs:subClassOf ifc:IfcCurve ;
+	owl:disjointWith  ifc:IfcConic, ifc:IfcSurfaceCurve, ifc:IfcLine, ifc:IfcPcurve, ifc:IfcBoundedCurve, ifc:IfcOffsetCurve3D ;
+	rdfs:subClassOf
+		[
+			rdf:type owl:Restriction ; 
+			owl:allValuesFrom ifc:IfcCurve ; 
+			owl:onProperty ifc:basisCurve_IfcOffsetCurve2D
+		] ;
+	rdfs:subClassOf 
+		[
+			rdf:type owl:Restriction ;
+			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+			owl:onProperty ifc:basisCurve_IfcOffsetCurve2D ;
+			owl:onClass ifc:IfcCurve
+		] ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -14288,50 +14105,6 @@ ifc:IfcHumidifierType
 			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
 			owl:onProperty ifc:predefinedType_IfcHumidifierType ;
 			owl:onClass ifc:IfcHumidifierTypeEnum
-		] .
-
-ifc:IfcAlignmentCurve
-	rdf:type owl:Class ;
-	rdfs:subClassOf ifc:IfcBoundedCurve ;
-	owl:disjointWith  ifc:IfcCompositeCurve, ifc:IfcBSplineCurve, ifc:IfcIndexedPolyCurve, ifc:IfcTrimmedCurve, ifc:IfcCurveSegment2D, ifc:IfcPolyline ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcAlignment2DHorizontal ; 
-			owl:onProperty ifc:horizontal_IfcAlignmentCurve
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:horizontal_IfcAlignmentCurve ;
-			owl:onClass ifc:IfcAlignment2DHorizontal
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcAlignment2DVertical ; 
-			owl:onProperty ifc:vertical_IfcAlignmentCurve
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:vertical_IfcAlignmentCurve ;
-			owl:onClass ifc:IfcAlignment2DVertical
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcLabel ; 
-			owl:onProperty ifc:tag_IfcAlignmentCurve
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:tag_IfcAlignmentCurve ;
-			owl:onClass ifc:IfcLabel
 		] .
 
 ifc:IfcWindowPanelProperties
@@ -14699,7 +14472,7 @@ ifc:IfcMetric
 ifc:IfcTextLiteral
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcGeometricRepresentationItem ;
-	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcOrientationExpression, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcAlignment2DVertical, ifc:IfcSolidModel, ifc:IfcAlignment2DSegment, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcAlignment2DHorizontal, ifc:IfcGeometricSet, ifc:IfcDistanceExpression ;
+	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcSolidModel, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcGeometricSet ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -14751,7 +14524,7 @@ ifc:IfcBSplineCurve
 					ifc:IfcBSplineCurveWithKnots
 				)
 		] ;
-	owl:disjointWith  ifc:IfcCompositeCurve, ifc:IfcIndexedPolyCurve, ifc:IfcTrimmedCurve, ifc:IfcAlignmentCurve, ifc:IfcCurveSegment2D, ifc:IfcPolyline ;
+	owl:disjointWith  ifc:IfcCompositeCurve, ifc:IfcIndexedPolyCurve, ifc:IfcTrimmedCurve, ifc:IfcPolyline ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -15117,48 +14890,6 @@ ifc:IfcOwnerHistory
 			owl:onClass ifc:IfcTimeStamp
 		] .
 
-ifc:IfcOffsetCurveByDistances
-	rdf:type owl:Class ;
-	rdfs:subClassOf ifc:IfcOffsetCurve ;
-	owl:disjointWith  ifc:IfcOffsetCurve2D, ifc:IfcOffsetCurve3D ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcDistanceExpression_List ; 
-			owl:onProperty ifc:offsetValues_IfcOffsetCurveByDistances
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:onProperty ifc:offsetValues_IfcOffsetCurveByDistances ;
-			owl:allValuesFrom
-				[
-					rdf:type owl:Restriction ; 
-					owl:onProperty list:hasNext ; 
-					owl:someValuesFrom ifc:IfcDistanceExpression_List
-				]
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:offsetValues_IfcOffsetCurveByDistances ;
-			owl:onClass ifc:IfcDistanceExpression_List
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcLabel ; 
-			owl:onProperty ifc:tag_IfcOffsetCurveByDistances
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:tag_IfcOffsetCurveByDistances ;
-			owl:onClass ifc:IfcLabel
-		] .
-
 ifc:IfcBoiler
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcEnergyConversionDevice ;
@@ -15327,7 +15058,7 @@ ifc:IfcBooleanResult
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcGeometricRepresentationItem ;
 	rdfs:subClassOf ifc:IfcBooleanOperand, ifc:IfcCsgSelect ;
-	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcFillAreaStyleTiles, ifc:IfcOrientationExpression, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcAlignment2DVertical, ifc:IfcSolidModel, ifc:IfcAlignment2DSegment, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcAlignment2DHorizontal, ifc:IfcGeometricSet, ifc:IfcDistanceExpression ;
+	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcFillAreaStyleTiles, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcSolidModel, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcGeometricSet ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -15457,7 +15188,7 @@ ifc:IfcStructuralActivity
 					ifc:IfcStructuralReaction
 				)
 		] ;
-	owl:disjointWith  ifc:IfcAnnotation, ifc:IfcSpatialElement, ifc:IfcElement, ifc:IfcStructuralItem, ifc:IfcProxy, ifc:IfcPort, ifc:IfcPositioningElement ;
+	owl:disjointWith  ifc:IfcAnnotation, ifc:IfcSpatialElement, ifc:IfcElement, ifc:IfcStructuralItem, ifc:IfcGrid, ifc:IfcProxy, ifc:IfcPort ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -15790,37 +15521,6 @@ ifc:IfcSubContractResource
 			owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
 			owl:onProperty ifc:predefinedType_IfcSubContractResource ;
 			owl:onClass ifc:IfcSubContractResourceTypeEnum
-		] .
-
-ifc:IfcOrientationExpression
-	rdf:type owl:Class ;
-	rdfs:subClassOf ifc:IfcGeometricRepresentationItem ;
-	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcAlignment2DVertical, ifc:IfcSolidModel, ifc:IfcAlignment2DSegment, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcAlignment2DHorizontal, ifc:IfcGeometricSet, ifc:IfcDistanceExpression ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcDirection ; 
-			owl:onProperty ifc:lateralAxisDirection_IfcOrientationExpression
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:lateralAxisDirection_IfcOrientationExpression ;
-			owl:onClass ifc:IfcDirection
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcDirection ; 
-			owl:onProperty ifc:verticalAxisDirection_IfcOrientationExpression
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:verticalAxisDirection_IfcOrientationExpression ;
-			owl:onClass ifc:IfcDirection
 		] .
 
 ifc:IfcReinforcingElementType
@@ -16337,34 +16037,6 @@ ifc:IfcStructuralCurveReaction
 			owl:onClass ifc:IfcStructuralCurveActivityTypeEnum
 		] .
 
-ifc:IfcOffsetCurve
-	rdf:type owl:Class ;
-	rdfs:subClassOf ifc:IfcCurve ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Class ;
-			owl:unionOf
-				(
-					ifc:IfcOffsetCurve2D
-					ifc:IfcOffsetCurveByDistances
-					ifc:IfcOffsetCurve3D
-				)
-		] ;
-	owl:disjointWith  ifc:IfcConic, ifc:IfcSurfaceCurve, ifc:IfcLine, ifc:IfcPcurve, ifc:IfcBoundedCurve ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcCurve ; 
-			owl:onProperty ifc:basisCurve_IfcOffsetCurve
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:basisCurve_IfcOffsetCurve ;
-			owl:onClass ifc:IfcCurve
-		] .
-
 ifc:IfcSpatialStructureElementType
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcSpatialElementType ;
@@ -16569,8 +16241,21 @@ ifc:IfcFurnitureType
 
 ifc:IfcOffsetCurve3D
 	rdf:type owl:Class ;
-	rdfs:subClassOf ifc:IfcOffsetCurve ;
-	owl:disjointWith  ifc:IfcOffsetCurve2D, ifc:IfcOffsetCurveByDistances ;
+	rdfs:subClassOf ifc:IfcCurve ;
+	owl:disjointWith  ifc:IfcConic, ifc:IfcOffsetCurve2D, ifc:IfcSurfaceCurve, ifc:IfcLine, ifc:IfcPcurve, ifc:IfcBoundedCurve ;
+	rdfs:subClassOf
+		[
+			rdf:type owl:Restriction ; 
+			owl:allValuesFrom ifc:IfcCurve ; 
+			owl:onProperty ifc:basisCurve_IfcOffsetCurve3D
+		] ;
+	rdfs:subClassOf 
+		[
+			rdf:type owl:Restriction ;
+			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+			owl:onProperty ifc:basisCurve_IfcOffsetCurve3D ;
+			owl:onClass ifc:IfcCurve
+		] ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -16946,7 +16631,7 @@ ifc:IfcHalfSpaceSolid
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcGeometricRepresentationItem ;
 	rdfs:subClassOf ifc:IfcBooleanOperand ;
-	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcOrientationExpression, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcAlignment2DVertical, ifc:IfcSolidModel, ifc:IfcAlignment2DSegment, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcAlignment2DHorizontal, ifc:IfcGeometricSet, ifc:IfcDistanceExpression ;
+	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcSolidModel, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcGeometricSet ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -16977,7 +16662,7 @@ ifc:IfcHalfSpaceSolid
 ifc:IfcPolyline
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcBoundedCurve ;
-	owl:disjointWith  ifc:IfcCompositeCurve, ifc:IfcBSplineCurve, ifc:IfcIndexedPolyCurve, ifc:IfcTrimmedCurve, ifc:IfcAlignmentCurve, ifc:IfcCurveSegment2D ;
+	owl:disjointWith  ifc:IfcCompositeCurve, ifc:IfcBSplineCurve, ifc:IfcIndexedPolyCurve, ifc:IfcTrimmedCurve ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -17051,12 +16736,10 @@ ifc:IfcBoundedCurve
 					ifc:IfcBSplineCurve
 					ifc:IfcIndexedPolyCurve
 					ifc:IfcTrimmedCurve
-					ifc:IfcAlignmentCurve
-					ifc:IfcCurveSegment2D
 					ifc:IfcPolyline
 				)
 		] ;
-	owl:disjointWith  ifc:IfcOffsetCurve, ifc:IfcConic, ifc:IfcSurfaceCurve, ifc:IfcLine, ifc:IfcPcurve .
+	owl:disjointWith  ifc:IfcConic, ifc:IfcOffsetCurve2D, ifc:IfcSurfaceCurve, ifc:IfcLine, ifc:IfcPcurve, ifc:IfcOffsetCurve3D .
 
 ifc:IfcRelDefinesByProperties
 	rdf:type owl:Class ;
@@ -17204,37 +16887,6 @@ ifc:IfcSpatialZoneType
 			owl:onClass ifc:IfcLabel
 		] .
 
-ifc:IfcAlignment2DVerSegCircularArc
-	rdf:type owl:Class ;
-	rdfs:subClassOf ifc:IfcAlignment2DVerticalSegment ;
-	owl:disjointWith  ifc:IfcAlignment2DVerSegLine, ifc:IfcAlignment2DVerSegParabolicArc ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcPositiveLengthMeasure ; 
-			owl:onProperty ifc:radius_IfcAlignment2DVerSegCircularArc
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:radius_IfcAlignment2DVerSegCircularArc ;
-			owl:onClass ifc:IfcPositiveLengthMeasure
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcBoolean ; 
-			owl:onProperty ifc:isConvex_IfcAlignment2DVerSegCircularArc
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:isConvex_IfcAlignment2DVerSegCircularArc ;
-			owl:onClass ifc:IfcBoolean
-		] .
-
 ifc:IfcCompressorType
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcFlowMovingDeviceType ;
@@ -17370,7 +17022,7 @@ ifc:IfcPropertyEnumeratedValue
 ifc:IfcCompositeCurveSegment
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcGeometricRepresentationItem ;
-	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcOrientationExpression, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcAlignment2DVertical, ifc:IfcSolidModel, ifc:IfcAlignment2DSegment, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcAlignment2DHorizontal, ifc:IfcGeometricSet, ifc:IfcDistanceExpression ;
+	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcSolidModel, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcGeometricSet ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -17747,7 +17399,6 @@ ifc:IfcObjectPlacement
 			owl:unionOf
 				(
 					ifc:IfcGridPlacement
-					ifc:IfcLinearPlacement
 					ifc:IfcLocalPlacement
 				)
 		] ;
@@ -18382,51 +18033,6 @@ ifc:IfcPropertyTemplateDefinition
 		] ;
 	owl:disjointWith  ifc:IfcPropertySetDefinition .
 
-ifc:IfcSectionedSolidHorizontal
-	rdf:type owl:Class ;
-	rdfs:subClassOf ifc:IfcSectionedSolid ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcDistanceExpression_List ; 
-			owl:onProperty ifc:crossSectionPositions_IfcSectionedSolidHorizontal
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:onProperty ifc:crossSectionPositions_IfcSectionedSolidHorizontal ;
-			owl:allValuesFrom
-				[
-					rdf:type owl:Restriction ; 
-					owl:onProperty list:hasNext ; 
-					owl:someValuesFrom 					[
-						rdf:type owl:Restriction ; 
-						owl:onProperty list:hasNext ; 
-						owl:someValuesFrom ifc:IfcDistanceExpression_List
-					]
-				]
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:crossSectionPositions_IfcSectionedSolidHorizontal ;
-			owl:onClass ifc:IfcDistanceExpression_List
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcBoolean ; 
-			owl:onProperty ifc:fixedAxisVertical_IfcSectionedSolidHorizontal
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:fixedAxisVertical_IfcSectionedSolidHorizontal ;
-			owl:onClass ifc:IfcBoolean
-		] .
-
 ifc:IfcLightSource
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcGeometricRepresentationItem ;
@@ -18441,7 +18047,7 @@ ifc:IfcLightSource
 					ifc:IfcLightSourceAmbient
 				)
 		] ;
-	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcOrientationExpression, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcVector, ifc:IfcAlignment2DVertical, ifc:IfcSolidModel, ifc:IfcAlignment2DSegment, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcAlignment2DHorizontal, ifc:IfcGeometricSet, ifc:IfcDistanceExpression ;
+	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcVector, ifc:IfcSolidModel, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcGeometricSet ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -19095,30 +18701,6 @@ ifc:IfcCartesianPointList3D
 			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
 			owl:onProperty ifc:coordList_IfcCartesianPointList3D ;
 			owl:onClass ifc:IfcLengthMeasure_List_List
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcLabel_List ; 
-			owl:onProperty ifc:tagList_IfcCartesianPointList3D
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:onProperty ifc:tagList_IfcCartesianPointList3D ;
-			owl:allValuesFrom
-				[
-					rdf:type owl:Restriction ; 
-					owl:onProperty list:hasNext ; 
-					owl:someValuesFrom ifc:IfcLabel_List
-				]
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:tagList_IfcCartesianPointList3D ;
-			owl:onClass ifc:IfcLabel_List
 		] .
 
 ifc:IfcTypeObject
@@ -19158,81 +18740,11 @@ ifc:IfcTypeObject
 			owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
 		] .
 
-ifc:IfcTransitionCurveSegment2D
-	rdf:type owl:Class ;
-	rdfs:subClassOf ifc:IfcCurveSegment2D ;
-	owl:disjointWith  ifc:IfcCircularArcSegment2D, ifc:IfcLineSegment2D ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcPositiveLengthMeasure ; 
-			owl:onProperty ifc:startRadius_IfcTransitionCurveSegment2D
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:startRadius_IfcTransitionCurveSegment2D ;
-			owl:onClass ifc:IfcPositiveLengthMeasure
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcPositiveLengthMeasure ; 
-			owl:onProperty ifc:endRadius_IfcTransitionCurveSegment2D
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:endRadius_IfcTransitionCurveSegment2D ;
-			owl:onClass ifc:IfcPositiveLengthMeasure
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcBoolean ; 
-			owl:onProperty ifc:isStartRadiusCCW_IfcTransitionCurveSegment2D
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:isStartRadiusCCW_IfcTransitionCurveSegment2D ;
-			owl:onClass ifc:IfcBoolean
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcBoolean ; 
-			owl:onProperty ifc:isEndRadiusCCW_IfcTransitionCurveSegment2D
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:isEndRadiusCCW_IfcTransitionCurveSegment2D ;
-			owl:onClass ifc:IfcBoolean
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcTransitionCurveType ; 
-			owl:onProperty ifc:transitionCurveType_IfcTransitionCurveSegment2D
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:transitionCurveType_IfcTransitionCurveSegment2D ;
-			owl:onClass ifc:IfcTransitionCurveType
-		] .
-
 ifc:IfcFillAreaStyleTiles
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcGeometricRepresentationItem ;
 	rdfs:subClassOf ifc:IfcFillStyleSelect ;
-	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcOrientationExpression, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcAlignment2DVertical, ifc:IfcSolidModel, ifc:IfcAlignment2DSegment, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcAlignment2DHorizontal, ifc:IfcGeometricSet, ifc:IfcDistanceExpression ;
+	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcSolidModel, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcGeometricSet ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -19424,7 +18936,7 @@ ifc:IfcConic
 					ifc:IfcEllipse
 				)
 		] ;
-	owl:disjointWith  ifc:IfcOffsetCurve, ifc:IfcSurfaceCurve, ifc:IfcLine, ifc:IfcPcurve, ifc:IfcBoundedCurve ;
+	owl:disjointWith  ifc:IfcOffsetCurve2D, ifc:IfcSurfaceCurve, ifc:IfcLine, ifc:IfcPcurve, ifc:IfcBoundedCurve, ifc:IfcOffsetCurve3D ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -19442,76 +18954,6 @@ ifc:IfcConic
 ifc:IfcAdvancedFace
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcFaceSurface .
-
-ifc:IfcDistanceExpression
-	rdf:type owl:Class ;
-	rdfs:subClassOf ifc:IfcGeometricRepresentationItem ;
-	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcOrientationExpression, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcAlignment2DVertical, ifc:IfcSolidModel, ifc:IfcAlignment2DSegment, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcAlignment2DHorizontal, ifc:IfcGeometricSet ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcLengthMeasure ; 
-			owl:onProperty ifc:distanceAlong_IfcDistanceExpression
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:distanceAlong_IfcDistanceExpression ;
-			owl:onClass ifc:IfcLengthMeasure
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcLengthMeasure ; 
-			owl:onProperty ifc:offsetLateral_IfcDistanceExpression
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:offsetLateral_IfcDistanceExpression ;
-			owl:onClass ifc:IfcLengthMeasure
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcLengthMeasure ; 
-			owl:onProperty ifc:offsetVertical_IfcDistanceExpression
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:offsetVertical_IfcDistanceExpression ;
-			owl:onClass ifc:IfcLengthMeasure
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcLengthMeasure ; 
-			owl:onProperty ifc:offsetLongitudinal_IfcDistanceExpression
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:offsetLongitudinal_IfcDistanceExpression ;
-			owl:onClass ifc:IfcLengthMeasure
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcBoolean ; 
-			owl:onProperty ifc:alongHorizontal_IfcDistanceExpression
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:alongHorizontal_IfcDistanceExpression ;
-			owl:onClass ifc:IfcBoolean
-		] .
 
 ifc:IfcSubContractResourceType
 	rdf:type owl:Class ;
@@ -19721,11 +19163,6 @@ ifc:IfcStructuralLoadTemperature
 			owl:onProperty ifc:deltaTZ_IfcStructuralLoadTemperature ;
 			owl:onClass ifc:IfcThermodynamicTemperatureMeasure
 		] .
-
-ifc:IfcAlignment2DVerSegLine
-	rdf:type owl:Class ;
-	rdfs:subClassOf ifc:IfcAlignment2DVerticalSegment ;
-	owl:disjointWith  ifc:IfcAlignment2DVerSegParabolicArc, ifc:IfcAlignment2DVerSegCircularArc .
 
 ifc:IfcSpaceHeater
 	rdf:type owl:Class ;
@@ -20244,73 +19681,6 @@ ifc:IfcWorkControl
 			owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
 			owl:onProperty ifc:finishTime_IfcWorkControl ;
 			owl:onClass ifc:IfcDateTime
-		] .
-
-ifc:IfcAlignment2DVerticalSegment
-	rdf:type owl:Class ;
-	rdfs:subClassOf ifc:IfcAlignment2DSegment ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Class ;
-			owl:unionOf
-				(
-					ifc:IfcAlignment2DVerSegLine
-					ifc:IfcAlignment2DVerSegParabolicArc
-					ifc:IfcAlignment2DVerSegCircularArc
-				)
-		] ;
-	owl:disjointWith  ifc:IfcAlignment2DHorizontalSegment ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcLengthMeasure ; 
-			owl:onProperty ifc:startDistAlong_IfcAlignment2DVerticalSegment
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:startDistAlong_IfcAlignment2DVerticalSegment ;
-			owl:onClass ifc:IfcLengthMeasure
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcPositiveLengthMeasure ; 
-			owl:onProperty ifc:horizontalLength_IfcAlignment2DVerticalSegment
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:horizontalLength_IfcAlignment2DVerticalSegment ;
-			owl:onClass ifc:IfcPositiveLengthMeasure
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcLengthMeasure ; 
-			owl:onProperty ifc:startHeight_IfcAlignment2DVerticalSegment
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:startHeight_IfcAlignment2DVerticalSegment ;
-			owl:onClass ifc:IfcLengthMeasure
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcRatioMeasure ; 
-			owl:onProperty ifc:startGradient_IfcAlignment2DVerticalSegment
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:startGradient_IfcAlignment2DVerticalSegment ;
-			owl:onClass ifc:IfcRatioMeasure
 		] .
 
 ifc:IfcDraughtingPreDefinedCurveFont
@@ -21059,7 +20429,7 @@ ifc:IfcSpatialElement
 					ifc:IfcSpatialZone
 				)
 		] ;
-	owl:disjointWith  ifc:IfcStructuralActivity, ifc:IfcAnnotation, ifc:IfcElement, ifc:IfcStructuralItem, ifc:IfcProxy, ifc:IfcPort, ifc:IfcPositioningElement ;
+	owl:disjointWith  ifc:IfcStructuralActivity, ifc:IfcAnnotation, ifc:IfcElement, ifc:IfcStructuralItem, ifc:IfcGrid, ifc:IfcProxy, ifc:IfcPort ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -21605,7 +20975,7 @@ ifc:IfcFaceBasedSurfaceModel
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcGeometricRepresentationItem ;
 	rdfs:subClassOf ifc:IfcSurfaceOrFaceSurface ;
-	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcOrientationExpression, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcAlignment2DVertical, ifc:IfcSolidModel, ifc:IfcAlignment2DSegment, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcAlignment2DHorizontal, ifc:IfcGeometricSet, ifc:IfcDistanceExpression ;
+	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcSolidModel, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcGeometricSet ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -21701,23 +21071,6 @@ ifc:IfcStructuralLoadLinearForce
 			owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
 			owl:onProperty ifc:linearMomentZ_IfcStructuralLoadLinearForce ;
 			owl:onClass ifc:IfcLinearMomentMeasure
-		] .
-
-ifc:IfcAlignment
-	rdf:type owl:Class ;
-	rdfs:subClassOf ifc:IfcLinearPositioningElement ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcAlignmentTypeEnum ; 
-			owl:onProperty ifc:predefinedType_IfcAlignment
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:predefinedType_IfcAlignment ;
-			owl:onClass ifc:IfcAlignmentTypeEnum
 		] .
 
 ifc:IfcRelConnectsPorts
@@ -21846,13 +21199,13 @@ ifc:IfcPoint
 					ifc:IfcCartesianPoint
 				)
 		] ;
-	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcOrientationExpression, ifc:IfcCompositeCurveSegment, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcAlignment2DVertical, ifc:IfcSolidModel, ifc:IfcAlignment2DSegment, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcAlignment2DHorizontal, ifc:IfcGeometricSet, ifc:IfcDistanceExpression .
+	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcCompositeCurveSegment, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcSolidModel, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcGeometricSet .
 
 ifc:IfcSurfaceCurve
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcCurve ;
 	rdfs:subClassOf ifc:IfcCurveOnSurface ;
-	owl:disjointWith  ifc:IfcOffsetCurve, ifc:IfcConic, ifc:IfcLine, ifc:IfcPcurve, ifc:IfcBoundedCurve ;
+	owl:disjointWith  ifc:IfcConic, ifc:IfcOffsetCurve2D, ifc:IfcLine, ifc:IfcPcurve, ifc:IfcBoundedCurve, ifc:IfcOffsetCurve3D ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -22013,7 +21366,7 @@ ifc:IfcPcurve
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcCurve ;
 	rdfs:subClassOf ifc:IfcCurveOnSurface ;
-	owl:disjointWith  ifc:IfcOffsetCurve, ifc:IfcConic, ifc:IfcSurfaceCurve, ifc:IfcLine, ifc:IfcBoundedCurve ;
+	owl:disjointWith  ifc:IfcConic, ifc:IfcOffsetCurve2D, ifc:IfcSurfaceCurve, ifc:IfcLine, ifc:IfcBoundedCurve, ifc:IfcOffsetCurve3D ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -22107,7 +21460,7 @@ ifc:IfcSeamCurve
 ifc:IfcLocalPlacement
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcObjectPlacement ;
-	owl:disjointWith  ifc:IfcGridPlacement, ifc:IfcLinearPlacement ;
+	owl:disjointWith  ifc:IfcGridPlacement ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -22391,37 +21744,6 @@ ifc:IfcRationalBSplineCurveWithKnots
 			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
 			owl:onProperty ifc:weightsData_IfcRationalBSplineCurveWithKnots ;
 			owl:onClass ifc:IfcReal_List
-		] .
-
-ifc:IfcAlignment2DVerSegParabolicArc
-	rdf:type owl:Class ;
-	rdfs:subClassOf ifc:IfcAlignment2DVerticalSegment ;
-	owl:disjointWith  ifc:IfcAlignment2DVerSegLine, ifc:IfcAlignment2DVerSegCircularArc ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcPositiveLengthMeasure ; 
-			owl:onProperty ifc:parabolaConstant_IfcAlignment2DVerSegParabolicArc
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:parabolaConstant_IfcAlignment2DVerSegParabolicArc ;
-			owl:onClass ifc:IfcPositiveLengthMeasure
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcBoolean ; 
-			owl:onProperty ifc:isConvex_IfcAlignment2DVerSegParabolicArc
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:isConvex_IfcAlignment2DVerSegParabolicArc ;
-			owl:onClass ifc:IfcBoolean
 		] .
 
 ifc:IfcZone
@@ -23255,59 +22577,6 @@ ifc:IfcRelAssociatesDocument
 			owl:onClass ifc:IfcDocumentSelect
 		] .
 
-ifc:IfcAlignment2DSegment
-	rdf:type owl:Class ;
-	rdfs:subClassOf ifc:IfcGeometricRepresentationItem ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Class ;
-			owl:unionOf
-				(
-					ifc:IfcAlignment2DVerticalSegment
-					ifc:IfcAlignment2DHorizontalSegment
-				)
-		] ;
-	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcOrientationExpression, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcAlignment2DVertical, ifc:IfcSolidModel, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcAlignment2DHorizontal, ifc:IfcGeometricSet, ifc:IfcDistanceExpression ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcBoolean ; 
-			owl:onProperty ifc:tangentialContinuity_IfcAlignment2DSegment
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:tangentialContinuity_IfcAlignment2DSegment ;
-			owl:onClass ifc:IfcBoolean
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcLabel ; 
-			owl:onProperty ifc:startTag_IfcAlignment2DSegment
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:startTag_IfcAlignment2DSegment ;
-			owl:onClass ifc:IfcLabel
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcLabel ; 
-			owl:onProperty ifc:endTag_IfcAlignment2DSegment
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:endTag_IfcAlignment2DSegment ;
-			owl:onClass ifc:IfcLabel
-		] .
-
 ifc:IfcStyledRepresentation
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcStyleModel .
@@ -23728,8 +22997,8 @@ ifc:IfcRecurrencePattern
 
 ifc:IfcGrid
 	rdf:type owl:Class ;
-	rdfs:subClassOf ifc:IfcPositioningElement ;
-	owl:disjointWith  ifc:IfcLinearPositioningElement, ifc:IfcReferent ;
+	rdfs:subClassOf ifc:IfcProduct ;
+	owl:disjointWith  ifc:IfcStructuralActivity, ifc:IfcAnnotation, ifc:IfcSpatialElement, ifc:IfcElement, ifc:IfcStructuralItem, ifc:IfcProxy, ifc:IfcPort ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -23996,37 +23265,6 @@ ifc:IfcTextStyleFontModel
 			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
 			owl:onProperty ifc:fontSize_IfcTextStyleFontModel ;
 			owl:onClass ifc:IfcSizeSelect
-		] .
-
-ifc:IfcReferent
-	rdf:type owl:Class ;
-	rdfs:subClassOf ifc:IfcPositioningElement ;
-	owl:disjointWith  ifc:IfcGrid, ifc:IfcLinearPositioningElement ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcReferentTypeEnum ; 
-			owl:onProperty ifc:predefinedType_IfcReferent
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:predefinedType_IfcReferent ;
-			owl:onClass ifc:IfcReferentTypeEnum
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcLengthMeasure ; 
-			owl:onProperty ifc:restartDistance_IfcReferent
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:restartDistance_IfcReferent ;
-			owl:onClass ifc:IfcLengthMeasure
 		] .
 
 ifc:IfcMaterialProfileSetUsageTapering
@@ -24826,7 +24064,7 @@ ifc:IfcResourceLevelRelationship
 ifc:IfcCompositeCurve
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcBoundedCurve ;
-	owl:disjointWith  ifc:IfcBSplineCurve, ifc:IfcIndexedPolyCurve, ifc:IfcTrimmedCurve, ifc:IfcAlignmentCurve, ifc:IfcCurveSegment2D, ifc:IfcPolyline ;
+	owl:disjointWith  ifc:IfcBSplineCurve, ifc:IfcIndexedPolyCurve, ifc:IfcTrimmedCurve, ifc:IfcPolyline ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -25108,7 +24346,7 @@ ifc:IfcObject
 ifc:IfcAnnotation
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcProduct ;
-	owl:disjointWith  ifc:IfcStructuralActivity, ifc:IfcSpatialElement, ifc:IfcElement, ifc:IfcStructuralItem, ifc:IfcProxy, ifc:IfcPort, ifc:IfcPositioningElement .
+	owl:disjointWith  ifc:IfcStructuralActivity, ifc:IfcSpatialElement, ifc:IfcElement, ifc:IfcStructuralItem, ifc:IfcGrid, ifc:IfcProxy, ifc:IfcPort .
 
 ifc:IfcSanitaryTerminal
 	rdf:type owl:Class ;
@@ -25415,7 +24653,7 @@ ifc:IfcStructuralSurfaceAction
 ifc:IfcPlanarExtent
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcGeometricRepresentationItem ;
-	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcOrientationExpression, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcAlignment2DVertical, ifc:IfcSolidModel, ifc:IfcAlignment2DSegment, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcAlignment2DHorizontal, ifc:IfcGeometricSet, ifc:IfcDistanceExpression ;
+	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcSolidModel, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcGeometricSet ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -25628,32 +24866,6 @@ ifc:IfcControl
 ifc:IfcBooleanClippingResult
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcBooleanResult .
-
-ifc:IfcLinearPositioningElement
-	rdf:type owl:Class ;
-	rdfs:subClassOf ifc:IfcPositioningElement ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Class ;
-			owl:unionOf
-				(
-					ifc:IfcAlignment
-				)
-		] ;
-	owl:disjointWith  ifc:IfcGrid, ifc:IfcReferent ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcCurve ; 
-			owl:onProperty ifc:axis_IfcLinearPositioningElement
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:axis_IfcLinearPositioningElement ;
-			owl:onClass ifc:IfcCurve
-		] .
 
 ifc:IfcReinforcingBarType
 	rdf:type owl:Class ;
@@ -26393,7 +25605,7 @@ ifc:IfcSurface
 					ifc:IfcSweptSurface
 				)
 		] ;
-	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcOrientationExpression, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcAlignment2DVertical, ifc:IfcSolidModel, ifc:IfcAlignment2DSegment, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcAlignment2DHorizontal, ifc:IfcGeometricSet, ifc:IfcDistanceExpression .
+	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcSolidModel, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcGeometricSet .
 
 ifc:IfcRightCircularCylinder
 	rdf:type owl:Class ;
@@ -27064,7 +26276,7 @@ ifc:IfcCartesianTransformationOperator
 					ifc:IfcCartesianTransformationOperator2D
 				)
 		] ;
-	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcOrientationExpression, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcAlignment2DVertical, ifc:IfcSolidModel, ifc:IfcAlignment2DSegment, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcAlignment2DHorizontal, ifc:IfcGeometricSet, ifc:IfcDistanceExpression ;
+	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcSolidModel, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcGeometricSet ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -27294,34 +26506,6 @@ ifc:IfcPhysicalComplexQuantity
 			owl:onClass ifc:IfcLabel
 		] .
 
-ifc:IfcTriangulatedIrregularNetwork
-	rdf:type owl:Class ;
-	rdfs:subClassOf ifc:IfcTriangulatedFaceSet ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcInteger_List ; 
-			owl:onProperty ifc:flags_IfcTriangulatedIrregularNetwork
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:onProperty ifc:flags_IfcTriangulatedIrregularNetwork ;
-			owl:allValuesFrom
-				[
-					rdf:type owl:Restriction ; 
-					owl:onProperty list:hasNext ; 
-					owl:someValuesFrom ifc:IfcInteger_List
-				]
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:flags_IfcTriangulatedIrregularNetwork ;
-			owl:onClass ifc:IfcInteger_List
-		] .
-
 ifc:IfcStructuralCurveAction
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcStructuralAction ;
@@ -27351,24 +26535,6 @@ ifc:IfcStructuralCurveAction
 			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
 			owl:onProperty ifc:predefinedType_IfcStructuralCurveAction ;
 			owl:onClass ifc:IfcStructuralCurveActivityTypeEnum
-		] .
-
-ifc:IfcAlignment2DHorizontalSegment
-	rdf:type owl:Class ;
-	rdfs:subClassOf ifc:IfcAlignment2DSegment ;
-	owl:disjointWith  ifc:IfcAlignment2DVerticalSegment ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcCurveSegment2D ; 
-			owl:onProperty ifc:curveGeometry_IfcAlignment2DHorizontalSegment
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:curveGeometry_IfcAlignment2DHorizontalSegment ;
-			owl:onClass ifc:IfcCurveSegment2D
 		] .
 
 ifc:IfcSpatialElementType
@@ -27603,30 +26769,6 @@ ifc:IfcCartesianPointList2D
 			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
 			owl:onProperty ifc:coordList_IfcCartesianPointList2D ;
 			owl:onClass ifc:IfcLengthMeasure_List_List
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcLabel_List ; 
-			owl:onProperty ifc:tagList_IfcCartesianPointList2D
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:onProperty ifc:tagList_IfcCartesianPointList2D ;
-			owl:allValuesFrom
-				[
-					rdf:type owl:Restriction ; 
-					owl:onProperty list:hasNext ; 
-					owl:someValuesFrom ifc:IfcLabel_List
-				]
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:tagList_IfcCartesianPointList2D ;
-			owl:onClass ifc:IfcLabel_List
 		] .
 
 ifc:IfcActuator
@@ -28185,7 +27327,7 @@ ifc:IfcVector
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcGeometricRepresentationItem ;
 	rdfs:subClassOf ifc:IfcHatchLineDistanceSelect, ifc:IfcVectorOrDirection ;
-	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcOrientationExpression, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcAlignment2DVertical, ifc:IfcSolidModel, ifc:IfcAlignment2DSegment, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcAlignment2DHorizontal, ifc:IfcGeometricSet, ifc:IfcDistanceExpression ;
+	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcSolidModel, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcGeometricSet ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -28335,7 +27477,7 @@ ifc:IfcManifoldSolidBrep
 					ifc:IfcAdvancedBrep
 				)
 		] ;
-	owl:disjointWith  ifc:IfcSweptAreaSolid, ifc:IfcSweptDiskSolid, ifc:IfcSectionedSolid, ifc:IfcCsgSolid ;
+	owl:disjointWith  ifc:IfcSweptAreaSolid, ifc:IfcSweptDiskSolid, ifc:IfcCsgSolid ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -28459,15 +27601,16 @@ ifc:IfcCurve
 			rdf:type owl:Class ;
 			owl:unionOf
 				(
-					ifc:IfcOffsetCurve
 					ifc:IfcConic
+					ifc:IfcOffsetCurve2D
 					ifc:IfcSurfaceCurve
 					ifc:IfcLine
 					ifc:IfcPcurve
 					ifc:IfcBoundedCurve
+					ifc:IfcOffsetCurve3D
 				)
 		] ;
-	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcOrientationExpression, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcAlignment2DVertical, ifc:IfcSolidModel, ifc:IfcAlignment2DSegment, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcAlignment2DHorizontal, ifc:IfcGeometricSet, ifc:IfcDistanceExpression .
+	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcSolidModel, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcGeometricSet .
 
 ifc:IfcEnergyConversionDevice
 	rdf:type owl:Class ;
@@ -28534,7 +27677,7 @@ ifc:IfcImageTexture
 ifc:IfcGridPlacement
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcObjectPlacement ;
-	owl:disjointWith  ifc:IfcLinearPlacement, ifc:IfcLocalPlacement ;
+	owl:disjointWith  ifc:IfcLocalPlacement ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -30501,7 +29644,7 @@ ifc:IfcElement
 					ifc:IfcDistributionElement
 				)
 		] ;
-	owl:disjointWith  ifc:IfcStructuralActivity, ifc:IfcAnnotation, ifc:IfcSpatialElement, ifc:IfcStructuralItem, ifc:IfcProxy, ifc:IfcPort, ifc:IfcPositioningElement ;
+	owl:disjointWith  ifc:IfcStructuralActivity, ifc:IfcAnnotation, ifc:IfcSpatialElement, ifc:IfcStructuralItem, ifc:IfcGrid, ifc:IfcProxy, ifc:IfcPort ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -30985,7 +30128,7 @@ ifc:IfcFillAreaStyleHatching
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcGeometricRepresentationItem ;
 	rdfs:subClassOf ifc:IfcFillStyleSelect ;
-	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcOrientationExpression, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcAlignment2DVertical, ifc:IfcSolidModel, ifc:IfcAlignment2DSegment, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcAlignment2DHorizontal, ifc:IfcGeometricSet, ifc:IfcDistanceExpression ;
+	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcSolidModel, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcGeometricSet ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -31277,7 +30420,7 @@ ifc:IfcMaterial
 ifc:IfcProxy
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcProduct ;
-	owl:disjointWith  ifc:IfcStructuralActivity, ifc:IfcAnnotation, ifc:IfcSpatialElement, ifc:IfcElement, ifc:IfcStructuralItem, ifc:IfcPort, ifc:IfcPositioningElement ;
+	owl:disjointWith  ifc:IfcStructuralActivity, ifc:IfcAnnotation, ifc:IfcSpatialElement, ifc:IfcElement, ifc:IfcStructuralItem, ifc:IfcGrid, ifc:IfcPort ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -31376,63 +30519,6 @@ ifc:IfcOpeningElement
 ifc:IfcDraughtingPreDefinedColour
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcPreDefinedColour .
-
-ifc:IfcLinearPlacement
-	rdf:type owl:Class ;
-	rdfs:subClassOf ifc:IfcObjectPlacement ;
-	owl:disjointWith  ifc:IfcGridPlacement, ifc:IfcLocalPlacement ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcCurve ; 
-			owl:onProperty ifc:placementRelTo_IfcLinearPlacement
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:placementRelTo_IfcLinearPlacement ;
-			owl:onClass ifc:IfcCurve
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcDistanceExpression ; 
-			owl:onProperty ifc:distance_IfcLinearPlacement
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:distance_IfcLinearPlacement ;
-			owl:onClass ifc:IfcDistanceExpression
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcOrientationExpression ; 
-			owl:onProperty ifc:orientation_IfcLinearPlacement
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:orientation_IfcLinearPlacement ;
-			owl:onClass ifc:IfcOrientationExpression
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcAxis2Placement3D ; 
-			owl:onProperty ifc:cartesianPosition_IfcLinearPlacement
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:cartesianPosition_IfcLinearPlacement ;
-			owl:onClass ifc:IfcAxis2Placement3D
-		] .
 
 ifc:IfcPlateType
 	rdf:type owl:Class ;
@@ -31743,7 +30829,7 @@ ifc:IfcPerson
 ifc:IfcIndexedPolyCurve
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcBoundedCurve ;
-	owl:disjointWith  ifc:IfcCompositeCurve, ifc:IfcBSplineCurve, ifc:IfcTrimmedCurve, ifc:IfcAlignmentCurve, ifc:IfcCurveSegment2D, ifc:IfcPolyline ;
+	owl:disjointWith  ifc:IfcCompositeCurve, ifc:IfcBSplineCurve, ifc:IfcTrimmedCurve, ifc:IfcPolyline ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -31813,7 +30899,7 @@ ifc:IfcStructuralItem
 					ifc:IfcStructuralConnection
 				)
 		] ;
-	owl:disjointWith  ifc:IfcStructuralActivity, ifc:IfcAnnotation, ifc:IfcSpatialElement, ifc:IfcElement, ifc:IfcProxy, ifc:IfcPort, ifc:IfcPositioningElement ;
+	owl:disjointWith  ifc:IfcStructuralActivity, ifc:IfcAnnotation, ifc:IfcSpatialElement, ifc:IfcElement, ifc:IfcGrid, ifc:IfcProxy, ifc:IfcPort ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -32196,7 +31282,7 @@ ifc:IfcCartesianPointList
 					ifc:IfcCartesianPointList2D
 				)
 		] ;
-	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcOrientationExpression, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcAlignment2DVertical, ifc:IfcSolidModel, ifc:IfcAlignment2DSegment, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcAlignment2DHorizontal, ifc:IfcGeometricSet, ifc:IfcDistanceExpression .
+	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcSolidModel, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcGeometricSet .
 
 ifc:IfcFaceOuterBound
 	rdf:type owl:Class ;
@@ -32451,11 +31537,6 @@ ifc:IfcAirTerminalType
 			owl:onClass ifc:IfcAirTerminalTypeEnum
 		] .
 
-ifc:IfcLineSegment2D
-	rdf:type owl:Class ;
-	rdfs:subClassOf ifc:IfcCurveSegment2D ;
-	owl:disjointWith  ifc:IfcCircularArcSegment2D, ifc:IfcTransitionCurveSegment2D .
-
 ifc:IfcRoundedRectangleProfileDef
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcRectangleProfileDef ;
@@ -32676,7 +31757,7 @@ ifc:IfcCrewResource
 ifc:IfcGeometricSet
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcGeometricRepresentationItem ;
-	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcOrientationExpression, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcAlignment2DVertical, ifc:IfcSolidModel, ifc:IfcAlignment2DSegment, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcAlignment2DHorizontal, ifc:IfcDistanceExpression ;
+	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcSolidModel, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -32860,7 +31941,7 @@ ifc:IfcRelAssignsToGroup
 ifc:IfcTrimmedCurve
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcBoundedCurve ;
-	owl:disjointWith  ifc:IfcCompositeCurve, ifc:IfcBSplineCurve, ifc:IfcIndexedPolyCurve, ifc:IfcAlignmentCurve, ifc:IfcCurveSegment2D, ifc:IfcPolyline ;
+	owl:disjointWith  ifc:IfcCompositeCurve, ifc:IfcBSplineCurve, ifc:IfcIndexedPolyCurve, ifc:IfcPolyline ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -33147,37 +32228,6 @@ ifc:IfcPropertyAbstraction
 				)
 		] .
 
-ifc:IfcCircularArcSegment2D
-	rdf:type owl:Class ;
-	rdfs:subClassOf ifc:IfcCurveSegment2D ;
-	owl:disjointWith  ifc:IfcLineSegment2D, ifc:IfcTransitionCurveSegment2D ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcPositiveLengthMeasure ; 
-			owl:onProperty ifc:radius_IfcCircularArcSegment2D
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:radius_IfcCircularArcSegment2D ;
-			owl:onClass ifc:IfcPositiveLengthMeasure
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcBoolean ; 
-			owl:onProperty ifc:isCCW_IfcCircularArcSegment2D
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:isCCW_IfcCircularArcSegment2D ;
-			owl:onClass ifc:IfcBoolean
-		] .
-
 ifc:IfcFace
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcTopologicalRepresentationItem ;
@@ -33392,7 +32442,7 @@ ifc:IfcTessellatedItem
 					ifc:IfcIndexedPolygonalFace
 				)
 		] ;
-	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcOrientationExpression, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcAlignment2DVertical, ifc:IfcSolidModel, ifc:IfcAlignment2DSegment, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcAlignment2DHorizontal, ifc:IfcGeometricSet, ifc:IfcDistanceExpression .
+	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcSolidModel, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcGeometricSet .
 
 ifc:IfcPlacement
 	rdf:type owl:Class ;
@@ -33407,7 +32457,7 @@ ifc:IfcPlacement
 					ifc:IfcAxis1Placement
 				)
 		] ;
-	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcOrientationExpression, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcAlignment2DVertical, ifc:IfcSolidModel, ifc:IfcAlignment2DSegment, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcAlignment2DHorizontal, ifc:IfcGeometricSet, ifc:IfcDistanceExpression ;
+	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcSolidModel, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcGeometricSet ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -34016,7 +33066,7 @@ ifc:IfcAirToAirHeatRecoveryType
 ifc:IfcShellBasedSurfaceModel
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcGeometricRepresentationItem ;
-	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcOrientationExpression, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcAlignment2DVertical, ifc:IfcSolidModel, ifc:IfcAlignment2DSegment, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcAlignment2DHorizontal, ifc:IfcGeometricSet, ifc:IfcDistanceExpression ;
+	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcSolidModel, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcGeometricSet ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -34831,7 +33881,7 @@ ifc:IfcFilter
 ifc:IfcLine
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcCurve ;
-	owl:disjointWith  ifc:IfcOffsetCurve, ifc:IfcConic, ifc:IfcSurfaceCurve, ifc:IfcPcurve, ifc:IfcBoundedCurve ;
+	owl:disjointWith  ifc:IfcConic, ifc:IfcOffsetCurve2D, ifc:IfcSurfaceCurve, ifc:IfcPcurve, ifc:IfcBoundedCurve, ifc:IfcOffsetCurve3D ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -35039,7 +34089,6 @@ ifc:IfcEngineType
 
 ifc:IfcShapeAspect
 	rdf:type owl:Class ;
-	rdfs:subClassOf ifc:IfcResourceObjectSelect ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -35391,7 +34440,7 @@ ifc:IfcCsgPrimitive3D
 					ifc:IfcRectangularPyramid
 				)
 		] ;
-	owl:disjointWith  ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcOrientationExpression, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcAlignment2DVertical, ifc:IfcSolidModel, ifc:IfcAlignment2DSegment, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcAlignment2DHorizontal, ifc:IfcGeometricSet, ifc:IfcDistanceExpression ;
+	owl:disjointWith  ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcSolidModel, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcGeometricSet ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -35441,7 +34490,7 @@ ifc:IfcDirection
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcGeometricRepresentationItem ;
 	rdfs:subClassOf ifc:IfcVectorOrDirection, ifc:IfcGridPlacementDirectionSelect ;
-	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcOrientationExpression, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcAlignment2DVertical, ifc:IfcSolidModel, ifc:IfcAlignment2DSegment, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcAlignment2DHorizontal, ifc:IfcGeometricSet, ifc:IfcDistanceExpression ;
+	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcSolidModel, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcGeometricSet ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -35929,7 +34978,7 @@ ifc:IfcMaterialLayerSet
 ifc:IfcSweptDiskSolid
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcSolidModel ;
-	owl:disjointWith  ifc:IfcSweptAreaSolid, ifc:IfcManifoldSolidBrep, ifc:IfcSectionedSolid, ifc:IfcCsgSolid ;
+	owl:disjointWith  ifc:IfcSweptAreaSolid, ifc:IfcManifoldSolidBrep, ifc:IfcCsgSolid ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -36301,7 +35350,7 @@ ifc:IfcRepresentationContext
 ifc:IfcBoundingBox
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcGeometricRepresentationItem ;
-	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcOrientationExpression, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcAlignment2DVertical, ifc:IfcSolidModel, ifc:IfcAlignment2DSegment, ifc:IfcCartesianTransformationOperator, ifc:IfcPlanarExtent, ifc:IfcAlignment2DHorizontal, ifc:IfcGeometricSet, ifc:IfcDistanceExpression ;
+	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcSolidModel, ifc:IfcCartesianTransformationOperator, ifc:IfcPlanarExtent, ifc:IfcGeometricSet ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -36358,7 +35407,7 @@ ifc:IfcBoundingBox
 ifc:IfcAnnotationFillArea
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcGeometricRepresentationItem ;
-	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcOrientationExpression, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcAlignment2DVertical, ifc:IfcSolidModel, ifc:IfcAlignment2DSegment, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcAlignment2DHorizontal, ifc:IfcGeometricSet, ifc:IfcDistanceExpression ;
+	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcSolidModel, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcGeometricSet ;
 	rdfs:subClassOf
 		[
 			rdf:type owl:Restriction ; 
@@ -36717,60 +35766,6 @@ ifc:IfcRelConnectsPortToElement
 			owl:onClass ifc:IfcDistributionElement
 		] .
 
-ifc:IfcSectionedSolid
-	rdf:type owl:Class ;
-	rdfs:subClassOf ifc:IfcSolidModel ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Class ;
-			owl:unionOf
-				(
-					ifc:IfcSectionedSolidHorizontal
-				)
-		] ;
-	owl:disjointWith  ifc:IfcSweptAreaSolid, ifc:IfcManifoldSolidBrep, ifc:IfcSweptDiskSolid, ifc:IfcCsgSolid ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcCurve ; 
-			owl:onProperty ifc:directrix_IfcSectionedSolid
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:directrix_IfcSectionedSolid ;
-			owl:onClass ifc:IfcCurve
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcProfileDef_List ; 
-			owl:onProperty ifc:crossSections_IfcSectionedSolid
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:onProperty ifc:crossSections_IfcSectionedSolid ;
-			owl:allValuesFrom
-				[
-					rdf:type owl:Restriction ; 
-					owl:onProperty list:hasNext ; 
-					owl:someValuesFrom 					[
-						rdf:type owl:Restriction ; 
-						owl:onProperty list:hasNext ; 
-						owl:someValuesFrom ifc:IfcProfileDef_List
-					]
-				]
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:crossSections_IfcSectionedSolid ;
-			owl:onClass ifc:IfcProfileDef_List
-		] .
-
 ifc:IfcIrregularTimeSeriesValue
 	rdf:type owl:Class ;
 	rdfs:subClassOf
@@ -37058,21 +36053,6 @@ ifc:IfcRelSpaceBoundary2ndLevel
 			owl:onClass ifc:IfcRelSpaceBoundary2ndLevel ;
 			owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
 		] .
-
-ifc:IfcPositioningElement
-	rdf:type owl:Class ;
-	rdfs:subClassOf ifc:IfcProduct ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Class ;
-			owl:unionOf
-				(
-					ifc:IfcGrid
-					ifc:IfcLinearPositioningElement
-					ifc:IfcReferent
-				)
-		] ;
-	owl:disjointWith  ifc:IfcStructuralActivity, ifc:IfcAnnotation, ifc:IfcSpatialElement, ifc:IfcElement, ifc:IfcStructuralItem, ifc:IfcProxy, ifc:IfcPort .
 
 ifc:IfcElectricTimeControlType
 	rdf:type owl:Class ;
@@ -37774,48 +36754,6 @@ ifc:IfcSite
 			owl:onClass ifc:IfcPostalAddress
 		] .
 
-ifc:IfcAlignment2DVertical
-	rdf:type owl:Class ;
-	rdfs:subClassOf ifc:IfcGeometricRepresentationItem ;
-	owl:disjointWith  ifc:IfcCsgPrimitive3D, ifc:IfcShellBasedSurfaceModel, ifc:IfcCurve, ifc:IfcPlacement, ifc:IfcFaceBasedSurfaceModel, ifc:IfcTessellatedItem, ifc:IfcTextLiteral, ifc:IfcCartesianPointList, ifc:IfcHalfSpaceSolid, ifc:IfcAnnotationFillArea, ifc:IfcSectionedSpine, ifc:IfcSurface, ifc:IfcFillAreaStyleHatching, ifc:IfcBooleanResult, ifc:IfcFillAreaStyleTiles, ifc:IfcOrientationExpression, ifc:IfcCompositeCurveSegment, ifc:IfcPoint, ifc:IfcDirection, ifc:IfcLightSource, ifc:IfcVector, ifc:IfcSolidModel, ifc:IfcAlignment2DSegment, ifc:IfcCartesianTransformationOperator, ifc:IfcBoundingBox, ifc:IfcPlanarExtent, ifc:IfcAlignment2DHorizontal, ifc:IfcGeometricSet, ifc:IfcDistanceExpression ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcAlignment2DVerticalSegment_List ; 
-			owl:onProperty ifc:segments_IfcAlignment2DVertical
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:onProperty ifc:segments_IfcAlignment2DVertical ;
-			owl:allValuesFrom
-				[
-					rdf:type owl:Restriction ; 
-					owl:onProperty list:hasNext ; 
-					owl:someValuesFrom ifc:IfcAlignment2DVerticalSegment_List
-				]
-		] ;
-	rdfs:subClassOf 
-		[
-			rdf:type owl:Restriction ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-			owl:onProperty ifc:segments_IfcAlignment2DVertical ;
-			owl:onClass ifc:IfcAlignment2DVerticalSegment_List
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ; 
-			owl:allValuesFrom ifc:IfcAlignmentCurve ; 
-			owl:onProperty ifc:toAlignmentCurve_IfcAlignment2DVertical
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ;
-			owl:onProperty ifc:toAlignmentCurve_IfcAlignment2DVertical ;
-			owl:onClass ifc:IfcAlignmentCurve ;
-			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
-		] .
-
 ifc:IfcFillAreaStyle
 	rdf:type owl:Class ;
 	rdfs:subClassOf ifc:IfcPresentationStyle ;
@@ -38254,12 +37192,6 @@ ifc:description_IfcMaterial
 	rdfs:range ifc:IfcText ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
-ifc:startDirection_IfcCurveSegment2D
-	rdfs:label "StartDirection" ;
-	rdfs:domain ifc:IfcCurveSegment2D ;
-	rdfs:range ifc:IfcPlaneAngleMeasure ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
 ifc:relatingGroup_IfcRelAssignsToGroup
 	rdfs:label "RelatingGroup" ;
 	rdfs:domain ifc:IfcRelAssignsToGroup ;
@@ -38426,38 +37358,6 @@ ifc:translationalStiffnessByLengthZ_IfcBoundaryEdgeCondition
 	rdfs:range ifc:IfcModulusOfTranslationalSubgradeReactionSelect ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
-ifc:crossSectionPositions_IfcSectionedSolidHorizontal
-	rdfs:label "CrossSectionPositions" ;
-	rdfs:domain ifc:IfcSectionedSolidHorizontal ;
-	rdfs:range ifc:IfcDistanceExpression_List ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
-ifc:IfcDistanceExpression_EmptyList
-	rdf:type owl:Class ;
-	rdfs:subClassOf list:EmptyList, ifc:IfcDistanceExpression_List .
-
-ifc:IfcDistanceExpression_List
-	rdf:type owl:Class ;
-	rdfs:subClassOf list:OWLList ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ;
-			owl:onProperty list:hasContents ;
-			owl:allValuesFrom ifc:IfcDistanceExpression
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ;
-			owl:onProperty list:isFollowedBy ;
-			owl:allValuesFrom ifc:IfcDistanceExpression_List
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ;
-			owl:onProperty list:hasNext ;
-			owl:allValuesFrom ifc:IfcDistanceExpression_List
-		] .
-
 ifc:yLength_IfcRectangularPyramid
 	rdfs:label "YLength" ;
 	rdfs:domain ifc:IfcRectangularPyramid ;
@@ -38480,12 +37380,6 @@ ifc:conversionFactor_IfcConversionBasedUnit
 	rdfs:label "ConversionFactor" ;
 	rdfs:domain ifc:IfcConversionBasedUnit ;
 	rdfs:range ifc:IfcMeasureWithUnit ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
-ifc:isStartRadiusCCW_IfcTransitionCurveSegment2D
-	rdfs:label "IsStartRadiusCCW" ;
-	rdfs:domain ifc:IfcTransitionCurveSegment2D ;
-	rdfs:range ifc:IfcBoolean ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
 ifc:status_IfcProjectOrder
@@ -38676,12 +37570,6 @@ ifc:width_IfcLShapeProfileDef
 	rdfs:range ifc:IfcPositiveLengthMeasure ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
-ifc:startPoint_IfcCurveSegment2D
-	rdfs:label "StartPoint" ;
-	rdfs:domain ifc:IfcCurveSegment2D ;
-	rdfs:range ifc:IfcCartesianPoint ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
 ifc:relatingReference_IfcExternalReferenceRelationship
 	rdfs:label "RelatingReference" ;
 	rdfs:domain ifc:IfcExternalReferenceRelationship ;
@@ -38695,12 +37583,6 @@ ifc:reflectionColour_IfcSurfaceStyleRendering
 	rdfs:range ifc:IfcColourOrFactor ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
-ifc:directrix_IfcSectionedSolid
-	rdfs:label "Directrix" ;
-	rdfs:domain ifc:IfcSectionedSolid ;
-	rdfs:range ifc:IfcCurve ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
 ifc:relatedObjects_IfcRelAssigns
 	rdfs:label "RelatedObjects" ;
 	rdfs:domain ifc:IfcRelAssigns ;
@@ -38712,12 +37594,6 @@ ifc:predefinedType_IfcCableFittingType
 	rdfs:label "PredefinedType" ;
 	rdfs:domain ifc:IfcCableFittingType ;
 	rdfs:range ifc:IfcCableFittingTypeEnum ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
-ifc:distanceAlong_IfcDistanceExpression
-	rdfs:label "DistanceAlong" ;
-	rdfs:domain ifc:IfcDistanceExpression ;
-	rdfs:range ifc:IfcLengthMeasure ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
 ifc:scheduleFinish_IfcTaskTime
@@ -38844,12 +37720,6 @@ ifc:panelPosition_IfcWindowPanelProperties
 	rdfs:range ifc:IfcWindowPanelPositionEnum ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
-ifc:isEndRadiusCCW_IfcTransitionCurveSegment2D
-	rdfs:label "IsEndRadiusCCW" ;
-	rdfs:domain ifc:IfcTransitionCurveSegment2D ;
-	rdfs:range ifc:IfcBoolean ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
 ifc:panelPosition_IfcPermeableCoveringProperties
 	rdfs:label "PanelPosition" ;
 	rdfs:domain ifc:IfcPermeableCoveringProperties ;
@@ -38971,12 +37841,6 @@ ifc:offsetDirection_IfcMaterialLayerWithOffsets
 	rdfs:label "OffsetDirection" ;
 	rdfs:domain ifc:IfcMaterialLayerWithOffsets ;
 	rdfs:range ifc:IfcLayerSetDirectionEnum ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
-ifc:startRadius_IfcTransitionCurveSegment2D
-	rdfs:label "StartRadius" ;
-	rdfs:domain ifc:IfcTransitionCurveSegment2D ;
-	rdfs:range ifc:IfcPositiveLengthMeasure ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
 ifc:side_IfcSurfaceStyle
@@ -39222,12 +38086,6 @@ ifc:depth_IfcLShapeProfileDef
 	rdfs:range ifc:IfcPositiveLengthMeasure ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
-ifc:parabolaConstant_IfcAlignment2DVerSegParabolicArc
-	rdfs:label "ParabolaConstant" ;
-	rdfs:domain ifc:IfcAlignment2DVerSegParabolicArc ;
-	rdfs:range ifc:IfcPositiveLengthMeasure ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
 ifc:longDescription_IfcTypeProcess
 	rdfs:label "LongDescription" ;
 	rdfs:domain ifc:IfcTypeProcess ;
@@ -39444,12 +38302,6 @@ ifc:predefinedType_IfcTask
 	rdfs:range ifc:IfcTaskTypeEnum ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
-ifc:startHeight_IfcAlignment2DVerticalSegment
-	rdfs:label "StartHeight" ;
-	rdfs:domain ifc:IfcAlignment2DVerticalSegment ;
-	rdfs:range ifc:IfcLengthMeasure ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
 ifc:creationDate_IfcOwnerHistory
 	rdfs:label "CreationDate" ;
 	rdfs:domain ifc:IfcOwnerHistory ;
@@ -39585,12 +38437,6 @@ ifc:interferenceType_IfcRelInterferesElements
 	rdfs:range ifc:IfcIdentifier ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
-ifc:restartDistance_IfcReferent
-	rdfs:label "RestartDistance" ;
-	rdfs:domain ifc:IfcReferent ;
-	rdfs:range ifc:IfcLengthMeasure ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
 ifc:usageName_IfcComplexPropertyTemplate
 	rdfs:label "UsageName" ;
 	rdfs:domain ifc:IfcComplexPropertyTemplate ;
@@ -39646,12 +38492,6 @@ ifc:mappedTo_IfcIndexedTextureMap
 	rdfs:domain ifc:IfcIndexedTextureMap ;
 	rdfs:range ifc:IfcTessellatedFaceSet ;
 	owl:inverseOf ifc:hasTextures_IfcTessellatedFaceSet ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
-ifc:tangentialContinuity_IfcAlignment2DSegment
-	rdfs:label "TangentialContinuity" ;
-	rdfs:domain ifc:IfcAlignment2DSegment ;
-	rdfs:range ifc:IfcBoolean ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
 ifc:hasProjections_IfcElement
@@ -39783,12 +38623,6 @@ ifc:durationType_IfcLagTime
 	rdfs:label "DurationType" ;
 	rdfs:domain ifc:IfcLagTime ;
 	rdfs:range ifc:IfcTaskDurationEnum ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
-ifc:lateralAxisDirection_IfcOrientationExpression
-	rdfs:label "LateralAxisDirection" ;
-	rdfs:domain ifc:IfcOrientationExpression ;
-	rdfs:range ifc:IfcDirection ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
 ifc:predefinedType_IfcElementAssembly
@@ -40157,12 +38991,6 @@ ifc:status_IfcCostSchedule
 	rdfs:range ifc:IfcLabel ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
-ifc:segmentLength_IfcCurveSegment2D
-	rdfs:label "SegmentLength" ;
-	rdfs:domain ifc:IfcCurveSegment2D ;
-	rdfs:range ifc:IfcPositiveLengthMeasure ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
 ifc:location_IfcPlacement
 	rdfs:label "Location" ;
 	rdfs:domain ifc:IfcPlacement ;
@@ -40348,12 +39176,6 @@ ifc:parentBoundary_IfcRelSpaceBoundary1stLevel
 	owl:inverseOf ifc:innerBoundaries_IfcRelSpaceBoundary1stLevel ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
-ifc:orientation_IfcLinearPlacement
-	rdfs:label "Orientation" ;
-	rdfs:domain ifc:IfcLinearPlacement ;
-	rdfs:range ifc:IfcOrientationExpression ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
 ifc:wordSpacing_IfcTextStyleTextModel
 	rdfs:label "WordSpacing" ;
 	rdfs:domain ifc:IfcTextStyleTextModel ;
@@ -40487,12 +39309,6 @@ ifc:unit_IfcTimeSeries
 	rdfs:label "Unit" ;
 	rdfs:domain ifc:IfcTimeSeries ;
 	rdfs:range ifc:IfcUnit ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
-ifc:tag_IfcOffsetCurveByDistances
-	rdfs:label "Tag" ;
-	rdfs:domain ifc:IfcOffsetCurveByDistances ;
-	rdfs:range ifc:IfcLabel ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
 ifc:linearForceY_IfcStructuralLoadLinearForce
@@ -40757,12 +39573,6 @@ ifc:startOfNextHatchLine_IfcFillAreaStyleHatching
 	rdfs:range ifc:IfcHatchLineDistanceSelect ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
-ifc:fixedAxisVertical_IfcSectionedSolidHorizontal
-	rdfs:label "FixedAxisVertical" ;
-	rdfs:domain ifc:IfcSectionedSolidHorizontal ;
-	rdfs:range ifc:IfcBoolean ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
 ifc:user_IfcAsset
 	rdfs:label "User" ;
 	rdfs:domain ifc:IfcAsset ;
@@ -40786,12 +39596,6 @@ ifc:textureTransform_IfcSurfaceTexture
 	rdfs:label "TextureTransform" ;
 	rdfs:domain ifc:IfcSurfaceTexture ;
 	rdfs:range ifc:IfcCartesianTransformationOperator2D ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
-ifc:offsetLateral_IfcDistanceExpression
-	rdfs:label "OffsetLateral" ;
-	rdfs:domain ifc:IfcDistanceExpression ;
-	rdfs:range ifc:IfcLengthMeasure ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
 ifc:predefinedType_IfcProjectOrder
@@ -40824,12 +39628,6 @@ ifc:predefinedType_IfcMedicalDevice
 	rdfs:range ifc:IfcMedicalDeviceTypeEnum ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
-ifc:startDistAlong_IfcAlignment2DVerticalSegment
-	rdfs:label "StartDistAlong" ;
-	rdfs:domain ifc:IfcAlignment2DVerticalSegment ;
-	rdfs:range ifc:IfcLengthMeasure ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
 ifc:relatingPropertyDefinition_IfcRelDefinesByProperties
 	rdfs:label "RelatingPropertyDefinition" ;
 	rdfs:domain ifc:IfcRelDefinesByProperties ;
@@ -40848,12 +39646,6 @@ ifc:predefinedType_IfcOutlet
 	rdfs:label "PredefinedType" ;
 	rdfs:domain ifc:IfcOutlet ;
 	rdfs:range ifc:IfcOutletTypeEnum ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
-ifc:radius_IfcAlignment2DVerSegCircularArc
-	rdfs:label "Radius" ;
-	rdfs:domain ifc:IfcAlignment2DVerSegCircularArc ;
-	rdfs:range ifc:IfcPositiveLengthMeasure ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
 ifc:position_IfcSweptSurface
@@ -41269,12 +40061,6 @@ ifc:isMilestone_IfcTask
 	rdfs:range ifc:IfcBoolean ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
-ifc:crossSections_IfcSectionedSolid
-	rdfs:label "CrossSections" ;
-	rdfs:domain ifc:IfcSectionedSolid ;
-	rdfs:range ifc:IfcProfileDef_List ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
 ifc:luminousIntensity_IfcLightDistributionData
 	rdfs:label "LuminousIntensity" ;
 	rdfs:domain ifc:IfcLightDistributionData ;
@@ -41375,12 +40161,6 @@ ifc:unit_IfcPropertyListValue
 	rdfs:label "Unit" ;
 	rdfs:domain ifc:IfcPropertyListValue ;
 	rdfs:range ifc:IfcUnit ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
-ifc:verticalAxisDirection_IfcOrientationExpression
-	rdfs:label "VerticalAxisDirection" ;
-	rdfs:domain ifc:IfcOrientationExpression ;
-	rdfs:range ifc:IfcDirection ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
 ifc:remainingUsage_IfcResourceTime
@@ -41567,12 +40347,6 @@ ifc:relatedBuildings_IfcRelServicesBuildings
 	owl:inverseOf ifc:servicedBySystems_IfcSpatialElement ;
 	rdf:type owl:ObjectProperty .
 
-ifc:radius_IfcCircularArcSegment2D
-	rdfs:label "Radius" ;
-	rdfs:domain ifc:IfcCircularArcSegment2D ;
-	rdfs:range ifc:IfcPositiveLengthMeasure ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
 ifc:predefinedType_IfcJunctionBoxType
 	rdfs:label "PredefinedType" ;
 	rdfs:domain ifc:IfcJunctionBoxType ;
@@ -41614,18 +40388,6 @@ ifc:filletRadius_IfcZShapeProfileDef
 	rdfs:label "FilletRadius" ;
 	rdfs:domain ifc:IfcZShapeProfileDef ;
 	rdfs:range ifc:IfcNonNegativeLengthMeasure ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
-ifc:cartesianPosition_IfcLinearPlacement
-	rdfs:label "CartesianPosition" ;
-	rdfs:domain ifc:IfcLinearPlacement ;
-	rdfs:range ifc:IfcAxis2Placement3D ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
-ifc:offsetVertical_IfcDistanceExpression
-	rdfs:label "OffsetVertical" ;
-	rdfs:domain ifc:IfcDistanceExpression ;
-	rdfs:range ifc:IfcLengthMeasure ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
 ifc:predefinedType_IfcReinforcingBar
@@ -41821,12 +40583,6 @@ ifc:engagedIn_IfcPerson
 	rdfs:range ifc:IfcPersonAndOrganization ;
 	owl:inverseOf ifc:thePerson_IfcPersonAndOrganization ;
 	rdf:type owl:ObjectProperty .
-
-ifc:alongHorizontal_IfcDistanceExpression
-	rdfs:label "AlongHorizontal" ;
-	rdfs:domain ifc:IfcDistanceExpression ;
-	rdfs:range ifc:IfcBoolean ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
 ifc:uMultiplicities_IfcBSplineSurfaceWithKnots
 	rdfs:label "UMultiplicities" ;
@@ -42302,12 +41058,6 @@ ifc:masterRepresentation_IfcSurfaceCurve
 	rdfs:range ifc:IfcPreferredSurfaceCurveRepresentation ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
-ifc:startTag_IfcAlignment2DSegment
-	rdfs:label "StartTag" ;
-	rdfs:domain ifc:IfcAlignment2DSegment ;
-	rdfs:range ifc:IfcLabel ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
 ifc:tag_IfcTypeProduct
 	rdfs:label "Tag" ;
 	rdfs:domain ifc:IfcTypeProduct ;
@@ -42368,12 +41118,6 @@ ifc:relatingResource_IfcRelAssignsToResource
 	rdfs:label "RelatingResource" ;
 	rdfs:domain ifc:IfcRelAssignsToResource ;
 	rdfs:range ifc:IfcResourceSelect ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
-ifc:predefinedType_IfcAlignment
-	rdfs:label "PredefinedType" ;
-	rdfs:domain ifc:IfcAlignment ;
-	rdfs:range ifc:IfcAlignmentTypeEnum ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
 ifc:upperBoundValue_IfcPropertyBoundedValue
@@ -42886,12 +41630,6 @@ ifc:distanceAttenuation_IfcLightSourcePositional
 	rdfs:range ifc:IfcReal ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
-ifc:offsetLongitudinal_IfcDistanceExpression
-	rdfs:label "OffsetLongitudinal" ;
-	rdfs:domain ifc:IfcDistanceExpression ;
-	rdfs:range ifc:IfcLengthMeasure ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
 ifc:webThickness_IfcIShapeProfileDef
 	rdfs:label "WebThickness" ;
 	rdfs:domain ifc:IfcIShapeProfileDef ;
@@ -42965,13 +41703,6 @@ ifc:connectsStructuralMembers_IfcStructuralConnection
 	owl:inverseOf ifc:relatedStructuralConnection_IfcRelConnectsStructuralMember ;
 	rdf:type owl:ObjectProperty .
 
-ifc:horizontal_IfcAlignmentCurve
-	rdfs:label "Horizontal" ;
-	rdfs:domain ifc:IfcAlignmentCurve ;
-	rdfs:range ifc:IfcAlignment2DHorizontal ;
-	owl:inverseOf ifc:toAlignmentCurve_IfcAlignment2DHorizontal ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
 ifc:earlyStart_IfcTaskTime
 	rdfs:label "EarlyStart" ;
 	rdfs:domain ifc:IfcTaskTime ;
@@ -43037,12 +41768,6 @@ ifc:dataOrigin_IfcSchedulingTime
 	rdfs:label "DataOrigin" ;
 	rdfs:domain ifc:IfcSchedulingTime ;
 	rdfs:range ifc:IfcDataOriginEnum ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
-ifc:flags_IfcTriangulatedIrregularNetwork
-	rdfs:label "Flags" ;
-	rdfs:domain ifc:IfcTriangulatedIrregularNetwork ;
-	rdfs:range ifc:IfcInteger_List ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
 ifc:messagingIDs_IfcTelecomAddress
@@ -43184,38 +41909,6 @@ ifc:status_IfcActionRequest
 	rdfs:domain ifc:IfcActionRequest ;
 	rdfs:range ifc:IfcLabel ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
-ifc:segments_IfcAlignment2DHorizontal
-	rdfs:label "Segments" ;
-	rdfs:domain ifc:IfcAlignment2DHorizontal ;
-	rdfs:range ifc:IfcAlignment2DHorizontalSegment_List ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
-ifc:IfcAlignment2DHorizontalSegment_EmptyList
-	rdf:type owl:Class ;
-	rdfs:subClassOf list:EmptyList, ifc:IfcAlignment2DHorizontalSegment_List .
-
-ifc:IfcAlignment2DHorizontalSegment_List
-	rdf:type owl:Class ;
-	rdfs:subClassOf list:OWLList ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ;
-			owl:onProperty list:hasContents ;
-			owl:allValuesFrom ifc:IfcAlignment2DHorizontalSegment
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ;
-			owl:onProperty list:isFollowedBy ;
-			owl:allValuesFrom ifc:IfcAlignment2DHorizontalSegment_List
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ;
-			owl:onProperty list:hasNext ;
-			owl:allValuesFrom ifc:IfcAlignment2DHorizontalSegment_List
-		] .
 
 ifc:predefinedType_IfcTendon
 	rdfs:label "PredefinedType" ;
@@ -43722,12 +42415,6 @@ ifc:eventOccurenceTime_IfcEvent
 	rdfs:label "EventOccurenceTime" ;
 	rdfs:domain ifc:IfcEvent ;
 	rdfs:range ifc:IfcEventTime ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
-ifc:placementRelTo_IfcLinearPlacement
-	rdfs:label "PlacementRelTo" ;
-	rdfs:domain ifc:IfcLinearPlacement ;
-	rdfs:range ifc:IfcCurve ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
 ifc:refLongitude_IfcSite
@@ -44913,12 +43600,6 @@ ifc:predefinedType_IfcRamp
 	rdfs:range ifc:IfcRampTypeEnum ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
-ifc:offsetValues_IfcOffsetCurveByDistances
-	rdfs:label "OffsetValues" ;
-	rdfs:domain ifc:IfcOffsetCurveByDistances ;
-	rdfs:range ifc:IfcDistanceExpression_List ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
 ifc:scale3_IfcCartesianTransformationOperator3DnonUniform
 	rdfs:label "Scale3" ;
 	rdfs:domain ifc:IfcCartesianTransformationOperator3DnonUniform ;
@@ -45157,12 +43838,6 @@ ifc:description_IfcActorRole
 	rdfs:label "Description" ;
 	rdfs:domain ifc:IfcActorRole ;
 	rdfs:range ifc:IfcText ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
-ifc:tag_IfcAlignmentCurve
-	rdfs:label "Tag" ;
-	rdfs:domain ifc:IfcAlignmentCurve ;
-	rdfs:range ifc:IfcLabel ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
 ifc:parentEdge_IfcSubedge
@@ -45710,38 +44385,6 @@ ifc:flangeThickness_IfcTShapeProfileDef
 	rdfs:range ifc:IfcPositiveLengthMeasure ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
-ifc:segments_IfcAlignment2DVertical
-	rdfs:label "Segments" ;
-	rdfs:domain ifc:IfcAlignment2DVertical ;
-	rdfs:range ifc:IfcAlignment2DVerticalSegment_List ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
-ifc:IfcAlignment2DVerticalSegment_EmptyList
-	rdf:type owl:Class ;
-	rdfs:subClassOf list:EmptyList, ifc:IfcAlignment2DVerticalSegment_List .
-
-ifc:IfcAlignment2DVerticalSegment_List
-	rdf:type owl:Class ;
-	rdfs:subClassOf list:OWLList ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ;
-			owl:onProperty list:hasContents ;
-			owl:allValuesFrom ifc:IfcAlignment2DVerticalSegment
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ;
-			owl:onProperty list:isFollowedBy ;
-			owl:allValuesFrom ifc:IfcAlignment2DVerticalSegment_List
-		] ;
-	rdfs:subClassOf
-		[
-			rdf:type owl:Restriction ;
-			owl:onProperty list:hasNext ;
-			owl:allValuesFrom ifc:IfcAlignment2DVerticalSegment_List
-		] .
-
 ifc:translationalStiffnessX_IfcBoundaryNodeCondition
 	rdfs:label "TranslationalStiffnessX" ;
 	rdfs:domain ifc:IfcBoundaryNodeCondition ;
@@ -45880,12 +44523,6 @@ ifc:predefinedType_IfcWindow
 	rdfs:label "PredefinedType" ;
 	rdfs:domain ifc:IfcWindow ;
 	rdfs:range ifc:IfcWindowTypeEnum ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
-ifc:endRadius_IfcTransitionCurveSegment2D
-	rdfs:label "EndRadius" ;
-	rdfs:domain ifc:IfcTransitionCurveSegment2D ;
-	rdfs:range ifc:IfcPositiveLengthMeasure ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
 ifc:name_IfcBoundaryCondition
@@ -46237,12 +44874,6 @@ ifc:interferenceGeometry_IfcRelInterferesElements
 	rdfs:range ifc:IfcConnectionGeometry ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
-ifc:distance_IfcLinearPlacement
-	rdfs:label "Distance" ;
-	rdfs:domain ifc:IfcLinearPlacement ;
-	rdfs:range ifc:IfcDistanceExpression ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
 ifc:curveInterpolation_IfcPropertyTableValue
 	rdfs:label "CurveInterpolation" ;
 	rdfs:domain ifc:IfcPropertyTableValue ;
@@ -46540,6 +45171,12 @@ ifc:nominalDiameter_IfcReinforcingBarType
 	rdfs:range ifc:IfcPositiveLengthMeasure ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
+ifc:basisCurve_IfcOffsetCurve2D
+	rdfs:label "BasisCurve" ;
+	rdfs:domain ifc:IfcOffsetCurve2D ;
+	rdfs:range ifc:IfcCurve ;
+	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
+
 ifc:thickness_IfcLShapeProfileDef
 	rdfs:label "Thickness" ;
 	rdfs:domain ifc:IfcLShapeProfileDef ;
@@ -46622,6 +45259,12 @@ ifc:predefinedType_IfcWorkCalendar
 	rdfs:label "PredefinedType" ;
 	rdfs:domain ifc:IfcWorkCalendar ;
 	rdfs:range ifc:IfcWorkCalendarTypeEnum ;
+	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
+
+ifc:basisCurve_IfcOffsetCurve3D
+	rdfs:label "BasisCurve" ;
+	rdfs:domain ifc:IfcOffsetCurve3D ;
+	rdfs:range ifc:IfcCurve ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
 ifc:predefinedType_IfcStackTerminalType
@@ -47287,13 +45930,6 @@ ifc:description_IfcConstraint
 	rdfs:range ifc:IfcText ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
-ifc:vertical_IfcAlignmentCurve
-	rdfs:label "Vertical" ;
-	rdfs:domain ifc:IfcAlignmentCurve ;
-	rdfs:range ifc:IfcAlignment2DVertical ;
-	owl:inverseOf ifc:toAlignmentCurve_IfcAlignment2DVertical ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
 ifc:processType_IfcTypeProcess
 	rdfs:label "ProcessType" ;
 	rdfs:domain ifc:IfcTypeProcess ;
@@ -47448,12 +46084,6 @@ ifc:polygonalBoundary_IfcPolygonalBoundedHalfSpace
 	rdfs:range ifc:IfcBoundedCurve ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
-ifc:axis_IfcLinearPositioningElement
-	rdfs:label "Axis" ;
-	rdfs:domain ifc:IfcLinearPositioningElement ;
-	rdfs:range ifc:IfcCurve ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
 ifc:predefinedType_IfcEvaporator
 	rdfs:label "PredefinedType" ;
 	rdfs:domain ifc:IfcEvaporator ;
@@ -47554,12 +46184,6 @@ ifc:destabilizingLoad_IfcStructuralAction
 	rdfs:label "DestabilizingLoad" ;
 	rdfs:domain ifc:IfcStructuralAction ;
 	rdfs:range ifc:IfcBoolean ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
-ifc:transitionCurveType_IfcTransitionCurveSegment2D
-	rdfs:label "TransitionCurveType" ;
-	rdfs:domain ifc:IfcTransitionCurveSegment2D ;
-	rdfs:range ifc:IfcTransitionCurveType ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
 ifc:panelPosition_IfcDoorPanelProperties
@@ -47666,12 +46290,6 @@ ifc:conditionCoordinateSystem_IfcRelConnectsStructuralMember
 	rdfs:range ifc:IfcAxis2Placement3D ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
-ifc:endTag_IfcAlignment2DSegment
-	rdfs:label "EndTag" ;
-	rdfs:domain ifc:IfcAlignment2DSegment ;
-	rdfs:range ifc:IfcLabel ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
 ifc:offsetDistances_IfcVirtualGridIntersection
 	rdfs:label "OffsetDistances" ;
 	rdfs:domain ifc:IfcVirtualGridIntersection ;
@@ -47743,12 +46361,6 @@ ifc:mappedTo_IfcIndexedColourMap
 	rdfs:domain ifc:IfcIndexedColourMap ;
 	rdfs:range ifc:IfcTessellatedFaceSet ;
 	owl:inverseOf ifc:hasColours_IfcTessellatedFaceSet ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
-ifc:curveGeometry_IfcAlignment2DHorizontalSegment
-	rdfs:label "CurveGeometry" ;
-	rdfs:domain ifc:IfcAlignment2DHorizontalSegment ;
-	rdfs:range ifc:IfcCurveSegment2D ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
 ifc:degree_IfcBSplineCurve
@@ -47852,13 +46464,6 @@ ifc:cardinalPoint_IfcMaterialProfileSetUsage
 	rdfs:label "CardinalPoint" ;
 	rdfs:domain ifc:IfcMaterialProfileSetUsage ;
 	rdfs:range ifc:IfcCardinalPointReference ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
-ifc:toAlignmentCurve_IfcAlignment2DVertical
-	rdfs:label "ToAlignmentCurve" ;
-	rdfs:domain ifc:IfcAlignment2DVertical ;
-	rdfs:range ifc:IfcAlignmentCurve ;
-	owl:inverseOf ifc:vertical_IfcAlignmentCurve ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
 ifc:rotationalStiffnessX_IfcBoundaryNodeCondition
@@ -48163,12 +46768,6 @@ ifc:name_IfcConversionBasedUnit
 	rdfs:range ifc:IfcLabel ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
-ifc:isCCW_IfcCircularArcSegment2D
-	rdfs:label "IsCCW" ;
-	rdfs:domain ifc:IfcCircularArcSegment2D ;
-	rdfs:range ifc:IfcBoolean ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
 ifc:types_IfcTypeObject
 	rdfs:label "Types" ;
 	rdfs:domain ifc:IfcTypeObject ;
@@ -48279,12 +46878,6 @@ ifc:startTime_IfcTimePeriod
 	rdfs:label "StartTime" ;
 	rdfs:domain ifc:IfcTimePeriod ;
 	rdfs:range ifc:IfcTime ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
-ifc:isConvex_IfcAlignment2DVerSegParabolicArc
-	rdfs:label "IsConvex" ;
-	rdfs:domain ifc:IfcAlignment2DVerSegParabolicArc ;
-	rdfs:range ifc:IfcBoolean ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
 ifc:suffixTitles_IfcPerson
@@ -48403,12 +46996,6 @@ ifc:hasDocumentReferences_IfcDocumentInformation
 	rdfs:range ifc:IfcDocumentReference ;
 	owl:inverseOf ifc:referencedDocument_IfcDocumentReference ;
 	rdf:type owl:ObjectProperty .
-
-ifc:startGradient_IfcAlignment2DVerticalSegment
-	rdfs:label "StartGradient" ;
-	rdfs:domain ifc:IfcAlignment2DVerticalSegment ;
-	rdfs:range ifc:IfcRatioMeasure ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
 ifc:volumeOnRelatedElement_IfcConnectionVolumeGeometry
 	rdfs:label "VolumeOnRelatedElement" ;
@@ -48538,13 +47125,6 @@ ifc:region_IfcPostalAddress
 	rdfs:range ifc:IfcLabel ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
-ifc:toAlignmentCurve_IfcAlignment2DHorizontal
-	rdfs:label "ToAlignmentCurve" ;
-	rdfs:domain ifc:IfcAlignment2DHorizontal ;
-	rdfs:range ifc:IfcAlignmentCurve ;
-	owl:inverseOf ifc:horizontal_IfcAlignmentCurve ;
-	rdf:type owl:ObjectProperty .
-
 ifc:description_IfcMaterialLayerSet
 	rdfs:label "Description" ;
 	rdfs:domain ifc:IfcMaterialLayerSet ;
@@ -48573,12 +47153,6 @@ ifc:predefinedType_IfcElectricDistributionBoardType
 	rdfs:label "PredefinedType" ;
 	rdfs:domain ifc:IfcElectricDistributionBoardType ;
 	rdfs:range ifc:IfcElectricDistributionBoardTypeEnum ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
-ifc:startDistAlong_IfcAlignment2DHorizontal
-	rdfs:label "StartDistAlong" ;
-	rdfs:domain ifc:IfcAlignment2DHorizontal ;
-	rdfs:range ifc:IfcLengthMeasure ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
 ifc:topXOffset_IfcTrapeziumProfileDef
@@ -48696,12 +47270,6 @@ ifc:yDim_IfcTrapeziumProfileDef
 	rdfs:label "YDim" ;
 	rdfs:domain ifc:IfcTrapeziumProfileDef ;
 	rdfs:range ifc:IfcPositiveLengthMeasure ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
-ifc:isConvex_IfcAlignment2DVerSegCircularArc
-	rdfs:label "IsConvex" ;
-	rdfs:domain ifc:IfcAlignment2DVerSegCircularArc ;
-	rdfs:range ifc:IfcBoolean ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
 ifc:predefinedType_IfcCompressor
@@ -48931,12 +47499,6 @@ ifc:materialClassifications_IfcMaterialClassificationRelationship
 	rdfs:range ifc:IfcClassificationSelect ;
 	rdf:type owl:ObjectProperty .
 
-ifc:basisCurve_IfcOffsetCurve
-	rdfs:label "BasisCurve" ;
-	rdfs:domain ifc:IfcOffsetCurve ;
-	rdfs:range ifc:IfcCurve ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
 ifc:uRLReference_IfcImageTexture
 	rdfs:label "URLReference" ;
 	rdfs:domain ifc:IfcImageTexture ;
@@ -49071,12 +47633,6 @@ ifc:earlyFinish_IfcTaskTime
 	rdfs:range ifc:IfcDateTime ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
-ifc:predefinedType_IfcReferent
-	rdfs:label "PredefinedType" ;
-	rdfs:domain ifc:IfcReferent ;
-	rdfs:range ifc:IfcReferentTypeEnum ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
 ifc:selfIntersect_IfcCompositeCurve
 	rdfs:label "SelfIntersect" ;
 	rdfs:domain ifc:IfcCompositeCurve ;
@@ -49198,12 +47754,6 @@ ifc:predefinedType_IfcInterceptorType
 	rdfs:range ifc:IfcInterceptorTypeEnum ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
-ifc:tagList_IfcCartesianPointList3D
-	rdfs:label "TagList" ;
-	rdfs:domain ifc:IfcCartesianPointList3D ;
-	rdfs:range ifc:IfcLabel_List ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
 ifc:predefinedType_IfcShadingDevice
 	rdfs:label "PredefinedType" ;
 	rdfs:domain ifc:IfcShadingDevice ;
@@ -49214,12 +47764,6 @@ ifc:ambientIntensity_IfcLightSource
 	rdfs:label "AmbientIntensity" ;
 	rdfs:domain ifc:IfcLightSource ;
 	rdfs:range ifc:IfcNormalisedRatioMeasure ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
-ifc:horizontalLength_IfcAlignment2DVerticalSegment
-	rdfs:label "HorizontalLength" ;
-	rdfs:domain ifc:IfcAlignment2DVerticalSegment ;
-	rdfs:range ifc:IfcPositiveLengthMeasure ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
 ifc:bound_IfcFaceBound
@@ -49314,12 +47858,6 @@ ifc:projectedOrTrue_IfcStructuralSurfaceAction
 	rdfs:label "ProjectedOrTrue" ;
 	rdfs:domain ifc:IfcStructuralSurfaceAction ;
 	rdfs:range ifc:IfcProjectedOrTrueLengthEnum ;
-	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
-
-ifc:tagList_IfcCartesianPointList2D
-	rdfs:label "TagList" ;
-	rdfs:domain ifc:IfcCartesianPointList2D ;
-	rdfs:range ifc:IfcLabel_List ;
 	rdf:type owl:FunctionalProperty, owl:ObjectProperty .
 
 ifc:knotMultiplicities_IfcBSplineCurveWithKnots

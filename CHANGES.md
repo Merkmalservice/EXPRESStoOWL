@@ -1,7 +1,8 @@
 EXPRESStoOWL Change Log
 
 Current Development 0.3-SNAPSHOT
-- 
+- changed namespace and output to http://standards.buildingsmart.org/IFC/DEV/
+- added conversion and files for IFC_ADD2 and IFC_ADD2_TC1
 
 Release 0.2 (2018-01-04)
 - Added additional ontology files
