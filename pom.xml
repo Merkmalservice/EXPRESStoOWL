@@ -12,7 +12,7 @@
   <artifactId>EXPRESStoOWL</artifactId>
   <name>EXPRESS to OWL</name>
   <packaging>jar</packaging>
-  <version>0.3</version>
+  <version>0.4-SNAPSHOT</version>
   <licenses>
     <license>
       <name>Apache License, Version 2.0</name>
