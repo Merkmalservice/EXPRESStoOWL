@@ -75,7 +75,7 @@ public class OWLWriter {
 
     public void outputOWL(String filePath) {
         try {
-            BufferedWriter out = new BufferedWriter(new FileWriter(filePath + ".ttl"));
+            BufferedWriter out = new BufferedWriter(new FileWriter(filePath)); //includes .ttl extension
             out.write("@base <" + Namespace.IFC + "> .\r\n");
             out.write("@prefix : <" + Namespace.IFC + "#> .\r\n");
             out.write("@prefix ifc: <" + Namespace.IFC + "#> .\r\n");
@@ -103,7 +103,7 @@ public class OWLWriter {
 
     public void outputExpressOWL(String filePath) {
         try {
-            BufferedWriter out = new BufferedWriter(new FileWriter(filePath + ".ttl"));
+            BufferedWriter out = new BufferedWriter(new FileWriter(filePath)); //includes .ttl
             out.write("@base <" + Namespace.EXPRESS + "> .\r\n");
             out.write("@prefix : <" + Namespace.EXPRESS + "#> .\r\n");
             out.write("@prefix expr: <" + Namespace.EXPRESS + "#> .\r\n");

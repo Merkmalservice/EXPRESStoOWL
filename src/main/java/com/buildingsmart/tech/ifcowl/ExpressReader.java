@@ -145,11 +145,9 @@ public class ExpressReader {
 		// else is accepted here
 		if (args.length != 2)
 			System.out
-			.println("Usage: java ExpressReader expressSchemaname pathToOutputFile \nExample: java ExpressReader IFC2X3_TC1 C:/outputfile.owl \nNote: only 'IFC2X3_Final', 'IFC2X3_TC1', 'IFC4_ADD1', 'IFC4_ADD2', 'IFC4_ADD2_TC1', 'IFC4', 'IFC4x1', and 'IFC4x3_RC1' are accepted options");
+			.println("Usage: java ExpressReader expressSchemaname pathToOutputFile \nExample: java ExpressReader IFC2X3_TC1 outputfile.ttl \nNote: only 'IFC2X3_Final', 'IFC2X3_TC1', 'IFC4_ADD1', 'IFC4_ADD2', 'IFC4_ADD2_TC1', 'IFC4', 'IFC4x1', and 'IFC4x3_RC1' are accepted options");
 		else {
 			String in = args[0];
-			if(in.equalsIgnoreCase("IFC4x3") || in.equalsIgnoreCase("IFC4X3") || in.equalsIgnoreCase("IFC4X3_RC1"))
-				in = "IFC4x3_RC1";
 			if (in.equalsIgnoreCase("IFC2X3_Final")
 					|| in.equalsIgnoreCase("IFC2X3_TC1")
 					|| in.equalsIgnoreCase("IFC4_ADD1")
@@ -178,7 +176,7 @@ public class ExpressReader {
 						inAlt = "IFC4_1/";
 					if (in.equalsIgnoreCase("IFC4"))
 						inAlt = "IFC4/FINAL/";
-					if (in.equalsIgnoreCase("IFC4x3_RC1") || in.equalsIgnoreCase("IFC4X3_RC1") || in.equalsIgnoreCase("IFC4x3") || in.equalsIgnoreCase("IFC4X3"))
+					if (in.equalsIgnoreCase("IFC4x3_RC1"))
 						inAlt = "IFC4_3/RC1/";
 					
 					Namespace.IFC = "http://standards.buildingsmart.org/IFC/DEV/"
@@ -191,7 +189,10 @@ public class ExpressReader {
 					OWLWriter ow = new OWLWriter(in, er.entities, er.types,
 							er.getSiblings(), er.getEnumIndividuals(),
 							er.getProperties());
-					ow.outputOWL(args[1]);
+					if(!args[1].endsWith(".ttl"))
+						ow.outputOWL(args[1]+".ttl");
+					else
+						ow.outputOWL(args[1]);
 					System.out
 					.println("Ended converting the EXPRESS schema into corresponding OWL file");
 				} catch (Exception e) {
@@ -199,7 +200,7 @@ public class ExpressReader {
 				}
 			} else
 				System.out
-				.println("Usage: java ExpressReader expressSchemaname pathToOutputFile \nExample: java ExpressReader IFC2X3_TC1 C:/outputfile.owl \nNote: only 'IFC2X3_Final', 'IFC2X3_TC1', 'IFC4_ADD1', 'IFC4_ADD2', 'IFC4_ADD2_TC1', 'IFC4', 'IFC4x1', and 'IFC4x3_RC1' are accepted options");
+				.println("Usage: java ExpressReader expressSchemaname pathToOutputFile \nExample: java ExpressReader IFC2X3_TC1 outputfile.ttl \nNote: only 'IFC2X3_Final', 'IFC2X3_TC1', 'IFC4_ADD1', 'IFC4_ADD2', 'IFC4_ADD2_TC1', 'IFC4', 'IFC4x1', and 'IFC4x3_RC1' are accepted options");
 		}
 	}
 
@@ -435,18 +436,20 @@ public class ExpressReader {
 	}
 
 	private void outputEntitiesAndTypes(String filePathNoExt, String schemaName) {
-		String filePath = filePathNoExt.substring(0, filePathNoExt.lastIndexOf("\\"));
+		String filePath = "";
+		if(filePathNoExt.lastIndexOf(File.separatorChar) != -1)
+			filePath = filePathNoExt.substring(0, filePathNoExt.lastIndexOf(File.separatorChar))+File.separatorChar;
 		System.out.println("writing output to : " + filePath+"ent"+schemaName+".ser and " + filePath+"typ"+schemaName+".ser");
 
 		FileOutputStream fos;
 		try {
-			fos = new FileOutputStream(filePath+"\\"+"ent"+schemaName+".ser");
+			fos = new FileOutputStream(filePath+"ent"+schemaName+".ser");
 
 			ObjectOutputStream oos = new ObjectOutputStream(fos);
 			oos.writeObject(entities);
 			oos.close();
 
-			fos = new FileOutputStream(filePath+"\\"+"typ"+schemaName+".ser");
+			fos = new FileOutputStream(filePath+"typ"+schemaName+".ser");
 
 			oos = new ObjectOutputStream(fos);
 			oos.writeObject(types);
@@ -457,10 +460,12 @@ public class ExpressReader {
 	}	
 
 	private void outputEntityPropertyList(String filePathNoExt, String schemaName){
-		String filePath = filePathNoExt.substring(0, filePathNoExt.lastIndexOf("\\"));
+		String filePath = "";
+		if(filePathNoExt.lastIndexOf(File.separatorChar) != -1)
+			filePath = filePathNoExt.substring(0, filePathNoExt.lastIndexOf(File.separatorChar))+File.separatorChar;
 		System.out.println("writing output to : " + filePath+"proplist"+schemaName+".csv and " + filePath+"proplist"+schemaName+".csv");
 		try {
-			File file = new File(filePath+"\\"+"proplist"+schemaName+".csv");
+			File file = new File(filePath+"proplist"+schemaName+".csv");
 			FileWriter fw = new FileWriter(file);
 			BufferedWriter bw = new BufferedWriter(fw);	
 
