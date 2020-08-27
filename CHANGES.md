@@ -1,6 +1,7 @@
 EXPRESStoOWL Change Log
 
 Current Development 0.4-SNAPSHOT
+- included maven publishing of shaded artifact
 - added conversion and files for IFC4x3_RC1
 
 Release 0.3 (2019-07-31)

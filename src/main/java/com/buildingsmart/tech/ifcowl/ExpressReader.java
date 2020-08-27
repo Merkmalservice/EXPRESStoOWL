@@ -148,6 +148,8 @@ public class ExpressReader {
 			.println("Usage: java ExpressReader expressSchemaname pathToOutputFile \nExample: java ExpressReader IFC2X3_TC1 C:/outputfile.owl \nNote: only 'IFC2X3_Final', 'IFC2X3_TC1', 'IFC4_ADD1', 'IFC4_ADD2', 'IFC4_ADD2_TC1', 'IFC4', 'IFC4x1', and 'IFC4x3_RC1' are accepted options");
 		else {
 			String in = args[0];
+			if(in.equalsIgnoreCase("IFC4x3") || in.equalsIgnoreCase("IFC4X3") || in.equalsIgnoreCase("IFC4X3_RC1"))
+				in = "IFC4x3_RC1";
 			if (in.equalsIgnoreCase("IFC2X3_Final")
 					|| in.equalsIgnoreCase("IFC2X3_TC1")
 					|| in.equalsIgnoreCase("IFC4_ADD1")
@@ -176,7 +178,7 @@ public class ExpressReader {
 						inAlt = "IFC4_1/";
 					if (in.equalsIgnoreCase("IFC4"))
 						inAlt = "IFC4/FINAL/";
-					if (in.equalsIgnoreCase("IFC4x3_RC1"))
+					if (in.equalsIgnoreCase("IFC4x3_RC1") || in.equalsIgnoreCase("IFC4X3_RC1") || in.equalsIgnoreCase("IFC4x3") || in.equalsIgnoreCase("IFC4X3"))
 						inAlt = "IFC4_3/RC1/";
 					
 					Namespace.IFC = "http://standards.buildingsmart.org/IFC/DEV/"
