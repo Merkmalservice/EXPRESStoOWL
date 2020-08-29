@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"com.buildingsmart.tech.ifcowl","l":"ExpressReader"},{"p":"fi.ni.rdf","l":"Namespace"},{"p":"com.buildingsmart.tech.ifcowl","l":"OWLWriter"}]
