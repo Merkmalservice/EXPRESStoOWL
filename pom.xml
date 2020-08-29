@@ -13,7 +13,7 @@
     <artifactId>EXPRESStoOWL</artifactId>
     <name>EXPRESS to OWL</name>
     <packaging>jar</packaging>
-    <version>0.4</version>
+    <version>0.4-SNAPSHOT</version>
     <licenses>
         <license>
             <name>Apache License, Version 2.0</name>
@@ -50,7 +50,7 @@
     <mailingLists>
         <mailingList>
             <name>Project Mailing List</name>
-            <post>pipauwel [dot] pauwels [at] ugent [dot] be</post>
+            <post>p [dot] pauwels [at] tue [dot] nl</post>
         </mailingList>
     </mailingLists>
 
@@ -58,7 +58,7 @@
         <developer>
             <id>pipauwel</id>
             <name>Pieter Pauwels</name>
-            <email>pipauwel [dot] pauwels [at] ugent [dot] be</email>
+            <email>p [dot] pauwels [at] tue [dot] nl</email>
         </developer>
 
         <developer>
