@@ -23,7 +23,7 @@ java -jar EXPRESStoOWL-0.4-shaded.jar IFC4x3_RC1 outputFile.ttl
 ```
 
 ## How to re-use this code in your own Java code project?
-The code is published as a Maven module in Maven Central (https://search.maven.org/artifact/com.github.pipauwel/EXPRESStoOWL). Therefore, you can directly include and use this code by adding the following lines to your `pom.xml` file.
+This Java code is managed using [Maven](https://maven.apache.org/). If you plan to re-use this code, you are advised to do this through maven. The code is published as a Maven module in Maven Central (https://search.maven.org/artifact/com.github.pipauwel/EXPRESStoOWL). Therefore, you can directly include and use this code by adding the following lines to your `pom.xml` file.
 
 ```
 <dependency>
@@ -32,9 +32,6 @@ The code is published as a Maven module in Maven Central (https://search.maven.o
   <version>0.4</version>
 </dependency>
 ```
-
-## Where to find the executable and how to use this in a Maven project
-This Java code is managed using [Maven](https://maven.apache.org/). If you plan to re-use this code, you are advised to do this through maven.
 
 ## Dependencies
 This code mainly reuses the [IFC Parser Library (v.0.2)](https://github.com/pipauwel/ifcParserLib) through Maven.
@@ -46,7 +43,7 @@ All source code is accessible through the [EXPRESStoOWL GitHub repository](https
 Issues can be posted in https://github.com/pipauwel/EXPRESStoOWL/issues.
 
 ## Changes
-A change log is available at [CHANGES.md]. 
+A change log is available at [CHANGES.md](CHANGES.md). 
 
 ## Java API Documentation
 The API Documentation is very limited, yet it is available at:
@@ -61,11 +58,11 @@ Previous versions are available:
 ## License
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0.
 
-See License details at [LICENSE].
+See License details at [LICENSE](LICENSE).
 
 ## Contact
 Want to know more? Contact:
 
-Pieter Pauwels
-Eindhoven University of Technology
-p.pauwels@tue.nl
+Pieter Pauwels  
+Eindhoven University of Technology  
+p.pauwels@tue.nl  
