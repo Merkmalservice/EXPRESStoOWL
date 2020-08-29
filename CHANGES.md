@@ -1,6 +1,6 @@
 EXPRESStoOWL Change Log
 
-Current Development 0.4-SNAPSHOT
+Release 0.4 (2020-08-29)
 - enabled system independence for file paths
 - included maven publishing of shaded artifact + altered javadoc use
 - added conversion and files for IFC4x3_RC1
