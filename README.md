@@ -1,5 +1,5 @@
 # EXPRESStoOWL (v.0.4)
-EXPRESStoOWL is a set of reusable Java components that allows to parse EXPRESS files (.exp) and convert them into [OWL](https://www.w3.org/standards/techs/owl) ontologies in the context of the [Industry Foundation Classes](https://technical.buildingsmart.org/standards/ifc/) (IFC). This library supports the conversion of express schemas available at [https://technical.buildingsmart.org/standards/ifc/ifc-schema-specifications/], namely:
+EXPRESStoOWL is a set of reusable Java components that allows to parse EXPRESS files (.exp) and convert them into [OWL](https://www.w3.org/standards/techs/owl) ontologies in the context of the [Industry Foundation Classes](https://technical.buildingsmart.org/standards/ifc/) (IFC). This library supports the conversion of express schemas available at https://technical.buildingsmart.org/standards/ifc/ifc-schema-specifications/, namely:
 
 - IFC2X3_TC1
 - IFC4_ADD1
