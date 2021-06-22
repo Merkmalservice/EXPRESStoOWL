@@ -34,3 +34,5 @@ jobs:
           java-version: ${{ matrix.java }}
       - name: Build with Maven
         run: mvn clean javadoc:aggregate verify #test #formatter:validate
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
