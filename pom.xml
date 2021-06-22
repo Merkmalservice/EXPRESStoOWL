@@ -241,7 +241,7 @@
                 <repository>
                     <id>github</id>
                     <name>GitHub Packages</name>
-                    <url>https://maven.pkg.github.com/Merkmalservice/IFCtoRDF</url>
+                    <url>https://maven.pkg.github.com/Merkmalservice/EXPRESStoOWL</url>
                 </repository>
             </distributionManagement>
         </profile>
