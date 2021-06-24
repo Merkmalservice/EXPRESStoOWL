@@ -19,6 +19,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 import java.util.StringTokenizer;
+import java.util.concurrent.ConcurrentHashMap;
 
 import com.buildingsmart.tech.ifcowl.vo.AttributeVO;
 import com.buildingsmart.tech.ifcowl.vo.EntityVO;
@@ -60,7 +61,7 @@ import fi.ni.rdf.Namespace;
 
 public class ExpressReader {
 
-	private static final Map<String, String> formattedClassNameCache = new HashMap<>();
+	private static final ConcurrentHashMap<String, String> formattedClassNameCache = new ConcurrentHashMap<>();
 	private Map<String, EntityVO> entities = new HashMap<>();
 	private Map<String, TypeVO> types = new HashMap<>();
 	private List<NamedIndividualVO> enumIndividuals = new ArrayList<>();
@@ -564,12 +565,9 @@ public class ExpressReader {
 		if (unformatted == null) {
 			return null;
 		}
-		String formatted = formattedClassNameCache.get(unformatted);
-		if (formatted == null) {
-			formatted = filterExtras(unformatted).toUpperCase();
-			formattedClassNameCache.put(unformatted, formatted);
-		}
-		return formatted;
+		return formattedClassNameCache.computeIfAbsent(unformatted, u -> {
+			return filterExtras(u).toUpperCase();
+		});
 	}
 
 	public static String formatProperty(String s, boolean isList) {
