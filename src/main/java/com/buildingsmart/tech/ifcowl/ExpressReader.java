@@ -19,6 +19,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 import java.util.StringTokenizer;
+import java.util.concurrent.ConcurrentHashMap;
 
 import com.buildingsmart.tech.ifcowl.vo.AttributeVO;
 import com.buildingsmart.tech.ifcowl.vo.EntityVO;
@@ -60,7 +61,7 @@ import fi.ni.rdf.Namespace;
 
 public class ExpressReader {
 
-	private static final Map<String, String> formattedClassNameCache = new HashMap<>();
+	private static final ConcurrentHashMap<String, String> formattedClassNameCache = new ConcurrentHashMap<>();
 	private Map<String, EntityVO> entities = new HashMap<>();
 	private Map<String, TypeVO> types = new HashMap<>();
 	private List<NamedIndividualVO> enumIndividuals = new ArrayList<>();
@@ -559,17 +560,43 @@ public class ExpressReader {
 		}
 	}
 
-	// FORMATTING and BUILDING
+	/**
+	 * Applies {@link #filterExtras(String)} to <code>unformatted</code> and returns it. The result is not cached.
+	 * (see {@link #formatClassName(String, boolean)}.
+	 * @param unformatted
+	 * @return
+	 */
 	public static String formatClassName(String unformatted) {
+		return formatClassName(unformatted, false);
+	}
+
+	// FORMATTING and BUILDING
+
+	/**
+	 * Applies {@link #filterExtras(String)} to <code>unformatted</code> and returns it. Optionally the
+	 * result is cached.
+	 *
+	 * Caution when using <code>useCache = true</code>: the cache is static and
+	 * is never cleared, this IS a memory leak, this should only be used for a limited number of distinct
+	 * arguments.
+	 *
+	 * Also, the {@link ExpressReader#filterExtras(String)} method is fast, caching seems not necessary.
+	 *
+	 * @param unformatted the string to format
+	 * @param useCache if true, the result is cached in a static, thread-safe cache, which is unbounded.
+	 *
+	 * @return the formatted string
+	 */
+	public static String formatClassName(String unformatted, boolean useCache) {
 		if (unformatted == null) {
 			return null;
 		}
-		String formatted = formattedClassNameCache.get(unformatted);
-		if (formatted == null) {
-			formatted = filterExtras(unformatted).toUpperCase();
-			formattedClassNameCache.put(unformatted, formatted);
+		if (!useCache) {
+			return filterExtras(unformatted).toUpperCase();
 		}
-		return formatted;
+		return formattedClassNameCache.computeIfAbsent(unformatted, u -> {
+			return filterExtras(u).toUpperCase();
+		});
 	}
 
 	public static String formatProperty(String s, boolean isList) {
